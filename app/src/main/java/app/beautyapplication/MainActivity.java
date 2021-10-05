@@ -23,7 +23,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void OnSkinCareClick(View v) {
-        Toast.makeText(this, "Skin care", Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(this, SkinCare.class);
+        OpenActivity(intent);
     }
 
     public void OnMakeUpClick(View v) {
