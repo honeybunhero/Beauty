@@ -27,82 +27,10 @@ public class MakeUp extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_make_up);
 
-        ll_primer = findViewById(R.id.ll_primer);
-        ll_foundation = findViewById(R.id.ll_foundation);
-        ll_concealer = findViewById(R.id.ll_concealer);
-        ll_blush = findViewById(R.id.ll_blush);
-        ll_contour = findViewById(R.id.ll_contour);
-        ll_setting_powder = findViewById(R.id.ll_setting_powder);
-        ll_highlighter = findViewById(R.id.ll_highlighter);
-        ll_brows = findViewById(R.id.ll_brows);
-        ll_eyeliner = findViewById(R.id.ll_eyeliner);
-        ll_eyeshadow = findViewById(R.id.ll_eyeshadow);
-        ll_mascara = findViewById(R.id.ll_mascara);
-        ll_lipliner = findViewById(R.id.ll_lipliner);
-        ll_lipstick = findViewById(R.id.ll_lipstick);
-        ll_lipgloss = findViewById(R.id.ll_lip_gloss);
-        ll_lipbalm_oil = findViewById(R.id.ll_lip_balm_oil);
-        ll_multi_palette = findViewById(R.id.ll_multi_palette);
-        ll_finishing_spray = findViewById(R.id.ll_finishing_spray);
-        ll_accessories = findViewById(R.id.ll_accessories);
-
-        btnAddPrimer = findViewById(R.id.btnAddPrimer);
-        btnAddFoundation = findViewById(R.id.btnAddFoundation);
-        btnAddConcealer = findViewById(R.id.btnAddConcealer);
-        btnAddBlush = findViewById(R.id.btnAddBlush);
-        btnAddContour = findViewById(R.id.btnAddContour);
-        btnAddSettingPowder = findViewById(R.id.btnAddSettingPowder);
-        btnAddHighlighter = findViewById(R.id.btnAddHighlighter);
-        btnAddBrows = findViewById(R.id.btnAddBrows);
-        btnAddEyeshadow = findViewById(R.id.btnAddEyeshadow);
-        btnAddMascara = findViewById(R.id.btnAddMascara);
-        btnAddEyeliner = findViewById(R.id.btnAddEyeliner);
-        btnAddLipliner = findViewById(R.id.btnAddLipliner);
-        btnAddLipstick = findViewById(R.id.btnAddLipstick);
-        btnAddLipGloss = findViewById(R.id.btnAddLipGloss);
-        btnAddLipBalmOil = findViewById(R.id.btnAddLipBalmOil);
-        btnAddMultiPalette = findViewById(R.id.btnAddMultiPalette);
-        btnAddFinishingSpray = findViewById(R.id.btnAddFinishingSpray);
-        btnAddAccessories = findViewById(R.id.btnAddAccessories);
-
-        btnRemovePrimer = findViewById(R.id.btnRemovePrimer);
-        btnRemoveFoundation = findViewById(R.id.btnRemoveFoundation);
-        btnRemoveConcealer = findViewById(R.id.btnRemoveConcealer);
-        btnRemoveBlush = findViewById(R.id.btnRemoveBlush);
-        btnRemoveContour = findViewById(R.id.btnRemoveContour);
-        btnRemoveSettingPowder = findViewById(R.id.btnRemoveSettingPowder);
-        btnRemoveHighlighter = findViewById(R.id.btnRemoveHighlighter);
-        btnRemoveBrows = findViewById(R.id.btnRemoveBrows);
-        btnRemoveEyeshadow = findViewById(R.id.btnRemoveEyeshadow);
-        btnRemoveMascara = findViewById(R.id.btnRemoveMascara);
-        btnRemoveEyeliner = findViewById(R.id.btnRemoveEyeliner);
-        btnRemoveLipliner = findViewById(R.id.btnRemoveLipliner);
-        btnRemoveLipstick = findViewById(R.id.btnRemoveLipstick);
-        btnRemoveLipGloss = findViewById(R.id.btnRemoveLipGloss);
-        btnRemoveLipBalmOil = findViewById(R.id.btnRemoveLipBalmOil);
-        btnRemoveMultiPalette = findViewById(R.id.btnRemoveMultiPalette);
-        btnRemoveFinishingSpray = findViewById(R.id.btnRemoveFinishingSpray);
-        btnRemoveAccessories = findViewById(R.id.btnRemoveAccessories);
-
-        btnViewPrimer = findViewById(R.id.btnViewPrimer);
-        btnViewFoundation = findViewById(R.id.btnViewFoundation);
-        btnViewConcealer = findViewById(R.id.btnViewConcealer);
-        btnViewBlush = findViewById(R.id.btnViewBlush);
-        btnViewContour = findViewById(R.id.btnViewContour);
-        btnViewSettingPowder = findViewById(R.id.btnViewSettingPowder);
-        btnViewHighlighter = findViewById(R.id.btnViewHighlighter);
-        btnViewBrows = findViewById(R.id.btnViewBrows);
-        btnViewEyeshadow = findViewById(R.id.btnViewEyeshadow);
-        btnViewMascara = findViewById(R.id.btnViewMascara);
-        btnViewEyeliner = findViewById(R.id.btnViewEyeliner);
-        btnViewLipliner = findViewById(R.id.btnViewLipliner);
-        btnViewLipstick = findViewById(R.id.btnViewLipstick);
-        btnViewLipGloss = findViewById(R.id.btnViewLipGloss);
-        btnViewLipBalmOil = findViewById(R.id.btnViewLipBalmOil);
-        btnViewMultiPalette = findViewById(R.id.btnViewMultiPalette);
-        btnViewFinishingSpray = findViewById(R.id.btnViewFinishingSpray);
-        btnViewAccessories = findViewById(R.id.btnViewAccessories);
-
+        LLSetup();
+        AddButtonsSetup();
+        RemoveButtonsSetup();
+        ViewButtonsSetup();
 
         btnAddPrimer.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -430,6 +358,90 @@ public class MakeUp extends AppCompatActivity {
                 Toast.makeText(MakeUp.this, "Viewing stuff in accessories", Toast.LENGTH_SHORT).show();
             }
         });
+    }
+
+    void LLSetup() {
+        ll_primer = findViewById(R.id.ll_primer);
+        ll_foundation = findViewById(R.id.ll_foundation);
+        ll_concealer = findViewById(R.id.ll_concealer);
+        ll_blush = findViewById(R.id.ll_blush);
+        ll_contour = findViewById(R.id.ll_contour);
+        ll_setting_powder = findViewById(R.id.ll_setting_powder);
+        ll_highlighter = findViewById(R.id.ll_highlighter);
+        ll_brows = findViewById(R.id.ll_brows);
+        ll_eyeliner = findViewById(R.id.ll_eyeliner);
+        ll_eyeshadow = findViewById(R.id.ll_eyeshadow);
+        ll_mascara = findViewById(R.id.ll_mascara);
+        ll_lipliner = findViewById(R.id.ll_lipliner);
+        ll_lipstick = findViewById(R.id.ll_lipstick);
+        ll_lipgloss = findViewById(R.id.ll_lip_gloss);
+        ll_lipbalm_oil = findViewById(R.id.ll_lip_balm_oil);
+        ll_multi_palette = findViewById(R.id.ll_multi_palette);
+        ll_finishing_spray = findViewById(R.id.ll_finishing_spray);
+        ll_accessories = findViewById(R.id.ll_accessories);
+    }
+
+    void AddButtonsSetup() {
+        btnAddPrimer = findViewById(R.id.btnAddPrimer);
+        btnAddFoundation = findViewById(R.id.btnAddFoundation);
+        btnAddConcealer = findViewById(R.id.btnAddConcealer);
+        btnAddBlush = findViewById(R.id.btnAddBlush);
+        btnAddContour = findViewById(R.id.btnAddContour);
+        btnAddSettingPowder = findViewById(R.id.btnAddSettingPowder);
+        btnAddHighlighter = findViewById(R.id.btnAddHighlighter);
+        btnAddBrows = findViewById(R.id.btnAddBrows);
+        btnAddEyeshadow = findViewById(R.id.btnAddEyeshadow);
+        btnAddMascara = findViewById(R.id.btnAddMascara);
+        btnAddEyeliner = findViewById(R.id.btnAddEyeliner);
+        btnAddLipliner = findViewById(R.id.btnAddLipliner);
+        btnAddLipstick = findViewById(R.id.btnAddLipstick);
+        btnAddLipGloss = findViewById(R.id.btnAddLipGloss);
+        btnAddLipBalmOil = findViewById(R.id.btnAddLipBalmOil);
+        btnAddMultiPalette = findViewById(R.id.btnAddMultiPalette);
+        btnAddFinishingSpray = findViewById(R.id.btnAddFinishingSpray);
+        btnAddAccessories = findViewById(R.id.btnAddAccessories);
+    }
+
+    void RemoveButtonsSetup() {
+        btnRemovePrimer = findViewById(R.id.btnRemovePrimer);
+        btnRemoveFoundation = findViewById(R.id.btnRemoveFoundation);
+        btnRemoveConcealer = findViewById(R.id.btnRemoveConcealer);
+        btnRemoveBlush = findViewById(R.id.btnRemoveBlush);
+        btnRemoveContour = findViewById(R.id.btnRemoveContour);
+        btnRemoveSettingPowder = findViewById(R.id.btnRemoveSettingPowder);
+        btnRemoveHighlighter = findViewById(R.id.btnRemoveHighlighter);
+        btnRemoveBrows = findViewById(R.id.btnRemoveBrows);
+        btnRemoveEyeshadow = findViewById(R.id.btnRemoveEyeshadow);
+        btnRemoveMascara = findViewById(R.id.btnRemoveMascara);
+        btnRemoveEyeliner = findViewById(R.id.btnRemoveEyeliner);
+        btnRemoveLipliner = findViewById(R.id.btnRemoveLipliner);
+        btnRemoveLipstick = findViewById(R.id.btnRemoveLipstick);
+        btnRemoveLipGloss = findViewById(R.id.btnRemoveLipGloss);
+        btnRemoveLipBalmOil = findViewById(R.id.btnRemoveLipBalmOil);
+        btnRemoveMultiPalette = findViewById(R.id.btnRemoveMultiPalette);
+        btnRemoveFinishingSpray = findViewById(R.id.btnRemoveFinishingSpray);
+        btnRemoveAccessories = findViewById(R.id.btnRemoveAccessories);
+    }
+
+    void ViewButtonsSetup() {
+        btnViewPrimer = findViewById(R.id.btnViewPrimer);
+        btnViewFoundation = findViewById(R.id.btnViewFoundation);
+        btnViewConcealer = findViewById(R.id.btnViewConcealer);
+        btnViewBlush = findViewById(R.id.btnViewBlush);
+        btnViewContour = findViewById(R.id.btnViewContour);
+        btnViewSettingPowder = findViewById(R.id.btnViewSettingPowder);
+        btnViewHighlighter = findViewById(R.id.btnViewHighlighter);
+        btnViewBrows = findViewById(R.id.btnViewBrows);
+        btnViewEyeshadow = findViewById(R.id.btnViewEyeshadow);
+        btnViewMascara = findViewById(R.id.btnViewMascara);
+        btnViewEyeliner = findViewById(R.id.btnViewEyeliner);
+        btnViewLipliner = findViewById(R.id.btnViewLipliner);
+        btnViewLipstick = findViewById(R.id.btnViewLipstick);
+        btnViewLipGloss = findViewById(R.id.btnViewLipGloss);
+        btnViewLipBalmOil = findViewById(R.id.btnViewLipBalmOil);
+        btnViewMultiPalette = findViewById(R.id.btnViewMultiPalette);
+        btnViewFinishingSpray = findViewById(R.id.btnViewFinishingSpray);
+        btnViewAccessories = findViewById(R.id.btnViewAccessories);
     }
 
     public void OnPrimerClick(View v) {

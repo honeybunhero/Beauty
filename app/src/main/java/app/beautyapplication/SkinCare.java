@@ -26,6 +26,65 @@ public class SkinCare extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_skin_care);
 
+        LLSetup();
+        AddButtonsSetup();
+        RemoveButtonsSetup();
+        ViewButtonsSetup();
+
+    }
+
+    void ViewButtonsSetup() {
+        btnViewCleanser = findViewById(R.id.btnViewCleanser);
+        btnViewExfoliators = findViewById(R.id.btnViewExfoliators);
+        btnViewWashOffMasks = findViewById(R.id.btnViewWashOffMasks);
+        btnViewSheet_masks = findViewById(R.id.btnViewSheet_masks);
+        btnViewToners = findViewById(R.id.btnViewToners);
+        btnViewEssences = findViewById(R.id.btnViewEssences);
+        btnViewSerums = findViewById(R.id.btnViewSerums);
+        btnViewOils = findViewById(R.id.btnViewOils);
+        btnViewEyes_care = findViewById(R.id.btnViewEyes_care);
+        btnViewMoisturizure = findViewById(R.id.btnViewMoisturizure);
+        btnViewFaceWipes = findViewById(R.id.btnViewFaceWipes);
+        btnViewLipScrubs = findViewById(R.id.btnViewLipScrubs);
+        btnViewNailCare = findViewById(R.id.btnViewNailCare);
+        btnViewAccessories = findViewById(R.id.btnViewAccessories);
+    }
+
+    void RemoveButtonsSetup() {
+        btnRemoveCleanser = findViewById(R.id.btnRemoveCleanser);
+        btnRemoveExfoliators = findViewById(R.id.btnRemoveExfoliators);
+        btnRemoveWashOffMasks = findViewById(R.id.btnRemoveWashOffMasks);
+        btnRemoveSheet_masks = findViewById(R.id.btnRemoveSheet_masks);
+        btnRemoveToners = findViewById(R.id.btnRemoveToners);
+        btnRemoveEssences = findViewById(R.id.btnRemoveEssences);
+        btnRemoveSerums = findViewById(R.id.btnRemoveSerums);
+        btnRemoveOils = findViewById(R.id.btnRemoveOils);
+        btnRemoveEyes_care = findViewById(R.id.btnRemoveEyes_care);
+        btnRemoveMoisturizure = findViewById(R.id.btnRemoveMoisturizure);
+        btnRemoveFaceWipes = findViewById(R.id.btnRemoveFaceWipes);
+        btnRemoveLipScrubs = findViewById(R.id.btnRemoveLipScrubs);
+        btnRemoveNailCare = findViewById(R.id.btnRemoveNailCare);
+        btnRemoveAccessories = findViewById(R.id.btnRemoveAccessories);
+    }
+
+    void AddButtonsSetup() {
+        btnAddCleanser = findViewById(R.id.btnAddCleanser);
+        btnAddExfoliators = findViewById(R.id.btnAddExfoliators);
+        btnAddWashOffMasks = findViewById(R.id.btnAddWashOffMasks);
+        btnAddSheet_masks = findViewById(R.id.btnAddSheet_masks);
+        btnAddToners = findViewById(R.id.btnAddToners);
+        btnAddEssences = findViewById(R.id.btnAddEssences);
+        btnAddSerums = findViewById(R.id.btnAddSerums);
+        btnAddOils = findViewById(R.id.btnAddOils);
+        btnAddEyes_care = findViewById(R.id.btnAddEyes_care);
+        btnAddMoisturizure = findViewById(R.id.btnAddMoisturizure);
+        btnAddFaceWipes = findViewById(R.id.btnAddFaceWipes);
+        btnAddLipScrubs = findViewById(R.id.btnAddLipScrubs);
+        btnAddNailCare = findViewById(R.id.btnAddNailCare);
+        btnAddAccessories = findViewById(R.id.btnAddAccessories);
+    }
+
+    void LLSetup() {
         ll_cleanser = findViewById(R.id.ll_cleanser);
         ll_exfoliators = findViewById(R.id.ll_exfoliators);
         ll_wash_off_masks = findViewById(R.id.ll_wash_off_masks);
@@ -62,6 +121,7 @@ public class SkinCare extends AppCompatActivity {
             ll_accessories.setVisibility(View.GONE);
         }
     }
+
     public void OnExfoliatorsClick(View v) {
         if (ll_exfoliators.getVisibility() == View.VISIBLE) {
             ll_exfoliators.setVisibility(View.GONE);
@@ -82,6 +142,7 @@ public class SkinCare extends AppCompatActivity {
             ll_accessories.setVisibility(View.GONE);
         }
     }
+
     public void OnWashOffMaskClick(View v) {
         if (ll_wash_off_masks.getVisibility() == View.VISIBLE) {
             ll_wash_off_masks.setVisibility(View.GONE);
@@ -102,6 +163,7 @@ public class SkinCare extends AppCompatActivity {
             ll_accessories.setVisibility(View.GONE);
         }
     }
+
     public void OnSheetMaskClick(View v) {
         if (ll_sheet_masks.getVisibility() == View.VISIBLE) {
             ll_sheet_masks.setVisibility(View.GONE);
@@ -122,6 +184,7 @@ public class SkinCare extends AppCompatActivity {
             ll_accessories.setVisibility(View.GONE);
         }
     }
+
     public void OnTonerClick(View v) {
         if (ll_toners.getVisibility() == View.VISIBLE) {
             ll_toners.setVisibility(View.GONE);
@@ -142,6 +205,7 @@ public class SkinCare extends AppCompatActivity {
             ll_accessories.setVisibility(View.GONE);
         }
     }
+
     public void OnEssencesClick(View v) {
         if (ll_essences.getVisibility() == View.VISIBLE) {
             ll_essences.setVisibility(View.GONE);
@@ -162,6 +226,7 @@ public class SkinCare extends AppCompatActivity {
             ll_accessories.setVisibility(View.GONE);
         }
     }
+
     public void OnSerumClick(View v) {
         if (ll_serums.getVisibility() == View.VISIBLE) {
             ll_serums.setVisibility(View.GONE);
@@ -182,6 +247,7 @@ public class SkinCare extends AppCompatActivity {
             ll_accessories.setVisibility(View.GONE);
         }
     }
+
     public void OnOilsClick(View v) {
         if (ll_oils.getVisibility() == View.VISIBLE) {
             ll_oils.setVisibility(View.GONE);
@@ -202,6 +268,7 @@ public class SkinCare extends AppCompatActivity {
             ll_accessories.setVisibility(View.GONE);
         }
     }
+
     public void OnEyeCareClick(View v) {
         if (ll_eyes_care.getVisibility() == View.VISIBLE) {
             ll_eyes_care.setVisibility(View.GONE);
@@ -222,6 +289,7 @@ public class SkinCare extends AppCompatActivity {
             ll_accessories.setVisibility(View.GONE);
         }
     }
+
     public void OnMoisturizureClick(View v) {
         if (ll_moisturizure.getVisibility() == View.VISIBLE) {
             ll_moisturizure.setVisibility(View.GONE);
@@ -242,6 +310,7 @@ public class SkinCare extends AppCompatActivity {
             ll_accessories.setVisibility(View.GONE);
         }
     }
+
     public void OnFaceWipesClick(View v) {
         if (ll_face_wipes.getVisibility() == View.VISIBLE) {
             ll_face_wipes.setVisibility(View.GONE);
@@ -262,6 +331,7 @@ public class SkinCare extends AppCompatActivity {
             ll_accessories.setVisibility(View.GONE);
         }
     }
+
     public void OnLipScrubsClick(View v) {
         if (ll_lip_scrubs.getVisibility() == View.VISIBLE) {
             ll_lip_scrubs.setVisibility(View.GONE);
@@ -282,6 +352,7 @@ public class SkinCare extends AppCompatActivity {
             ll_accessories.setVisibility(View.GONE);
         }
     }
+
     public void OnNailCareClick(View v) {
         if (ll_nail_care.getVisibility() == View.VISIBLE) {
             ll_nail_care.setVisibility(View.GONE);
@@ -302,6 +373,7 @@ public class SkinCare extends AppCompatActivity {
             ll_accessories.setVisibility(View.GONE);
         }
     }
+
     public void OnAccessoriesClick(View v) {
         if (ll_accessories.getVisibility() == View.VISIBLE) {
             ll_accessories.setVisibility(View.GONE);

@@ -17,7 +17,7 @@
         android:layout_marginTop="25dp"
         android:layout_marginRight="10dp"
         android:gravity="center_horizontal"
-        android:text="Beauty Organizer"
+        android:text="@string/beauty_organizer"
         android:textColor="#F8BBD0"
         android:textSize="34sp" />
 
@@ -37,9 +37,10 @@
         android:background="@color/buttons_1"
         android:clickable="true"
         android:onClick="OnMakeUpClick"
-        android:text="Make Up"
+        android:text="@string/make_up"
         android:textColor="@color/text"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:focusable="true" />
 
     <Button
         android:id="@+id/btn_SkinCare"
@@ -52,7 +53,8 @@
         android:background="@color/buttons_1"
         android:clickable="true"
         android:onClick="OnSkinCareClick"
-        android:text="Skin Care"
+        android:text="@string/skin_care"
         android:textColor="#F8BBD0"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:focusable="true" />
 </LinearLayout>

@@ -30,7 +30,7 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:onClick="OnCleanserClick"
-                android:text="Cleanser"
+                android:text="@string/cleanser"
                 android:textColor="@color/text"
                 android:textSize="20sp"
                 app:layout_gravity="fill" />
@@ -98,7 +98,7 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:onClick="OnExfoliatorsClick"
-                android:text="Exfoliators"
+                android:text="@string/exfoliators"
                 android:textColor="@color/text"
                 android:textSize="20sp" />
 
@@ -165,7 +165,7 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:onClick="OnWashOffMaskClick"
-                android:text="Wash-off Masks"
+                android:text="@string/wash_off_masks"
                 android:textColor="@color/text"
                 android:textSize="20sp" />
 
@@ -232,7 +232,7 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:onClick="OnSheetMaskClick"
-                android:text="Sheet Masks"
+                android:text="@string/sheet_masks"
                 android:textColor="@color/text"
                 android:textSize="20sp" />
 
@@ -299,7 +299,7 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:onClick="OnTonerClick"
-                android:text="Toners"
+                android:text="@string/toners"
                 android:textColor="@color/text"
                 android:textSize="20sp" />
 
@@ -366,7 +366,7 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:onClick="OnEssencesClick"
-                android:text="Essences"
+                android:text="@string/essences"
                 android:textColor="@color/text"
                 android:textSize="20sp" />
 
@@ -433,7 +433,7 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:onClick="OnSerumClick"
-                android:text="Serums"
+                android:text="@string/serums"
                 android:textColor="@color/text"
                 android:textSize="20sp" />
 
@@ -500,7 +500,7 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:onClick="OnOilsClick"
-                android:text="Oils"
+                android:text="@string/oils"
                 android:textColor="@color/text"
                 android:textSize="20sp" />
 
@@ -567,7 +567,7 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:onClick="OnEyeCareClick"
-                android:text="Eye Under Care"
+                android:text="@string/eye_under_care"
                 android:textColor="@color/text"
                 android:textSize="20sp" />
 
@@ -634,7 +634,7 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:onClick="OnMoisturizureClick"
-                android:text="Moisturizure"
+                android:text="@string/moisturizure"
                 android:textColor="@color/text"
                 android:textSize="20sp" />
 
@@ -701,7 +701,7 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:onClick="OnFaceWipesClick"
-                android:text="Face Wipes"
+                android:text="@string/face_wipes"
                 android:textColor="@color/text"
                 android:textSize="20sp" />
 
@@ -768,7 +768,7 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:onClick="OnLipScrubsClick"
-                android:text="Lip Scrubs"
+                android:text="@string/lip_scrubs"
                 android:textColor="@color/text"
                 android:textSize="20sp" />
 
@@ -835,7 +835,7 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:onClick="OnNailCareClick"
-                android:text="Nail Care"
+                android:text="@string/nail_care"
                 android:textColor="@color/text"
                 android:textSize="20sp" />
 

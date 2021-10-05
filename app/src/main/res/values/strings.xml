@@ -21,4 +21,20 @@
     <string name="addBtn">Add</string>
     <string name="removeBtn">Remove</string>
     <string name="viewBtn">View</string>
+    <string name="cleanser">Cleanser</string>
+    <string name="exfoliators">Exfoliators</string>
+    <string name="nail_care">Nail Care</string>
+    <string name="face_wipes">Face Wipes</string>
+    <string name="moisturizure">Moisturizure</string>
+    <string name="lip_scrubs">Lip Scrubs</string>
+    <string name="eye_under_care">Eye Under Care</string>
+    <string name="oils">Oils</string>
+    <string name="serums">Serums</string>
+    <string name="essences">Essences</string>
+    <string name="toners">Toners</string>
+    <string name="sheet_masks">Sheet Masks</string>
+    <string name="wash_off_masks">Wash-off Masks</string>
+    <string name="beauty_organizer">Beauty Organizer</string>
+    <string name="make_up">Make Up</string>
+    <string name="skin_care">Skin Care</string>
 </resources>
