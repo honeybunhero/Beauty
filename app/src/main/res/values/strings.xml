@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">BeautyApplication</string>
+    <string name="primer">Primer</string>
+    <string name="foundation">Foundation</string>
+    <string name="concealer">Concealer</string>
+    <string name="setting_powder">Setting Powder</string>
+    <string name="blush">Blush</string>
+    <string name="contour">Contour</string>
+    <string name="highlighter">Highlighter</string>
+    <string name="brows">Brows</string>
+    <string name="eyeshadow">Eyeshadow</string>
+    <string name="eyeliner">Eyeliner</string>
+    <string name="mascara">Mascara</string>
+    <string name="lipstick">Lipstick</string>
+    <string name="lipgloss">Lip gloss</string>
+    <string name="lipliner">Lip liner</string>
+    <string name="lipbalm_oil">Lip balm / oil</string>
+    <string name="accessories">Accessories</string>
+    <string name="palettes">Multi Palette</string>
+    <string name="finishing_spray">Finishing spray</string>
+    <string name="addBtn">Add</string>
+    <string name="removeBtn">Remove</string>
+    <string name="viewBtn">View</string>
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_horizontal"
+        android:text="Beauty Organizer"
+        android:textColor="#F8BBD0"
+        android:textSize="34sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp" />
+
+    <Button
+        android:id="@+id/btn_MakeUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|left|end"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/buttons_1"
+        android:clickable="true"
+        android:onClick="OnMakeUpClick"
+        android:text="Make Up"
+        android:textColor="@color/text"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_SkinCare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|left|end"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/buttons_1"
+        android:clickable="true"
+        android:onClick="OnSkinCareClick"
+        android:text="Skin Care"
+        android:textColor="#F8BBD0"
+        android:textSize="20sp" />
+</LinearLayout>
