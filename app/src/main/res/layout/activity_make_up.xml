@@ -57,20 +57,6 @@
                     android:textColor="#F8BBD0" />
 
                 <Button
-                    android:id="@+id/btnRemovePrimer"
-                    style="?android:attr/buttonBarButtonStyle"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp"
-                    android:layout_weight="1"
-                    android:background="@color/buttons_2"
-                    android:clickable="false"
-                    android:focusable="true"
-                    android:text="@string/removeBtn"
-                    android:textColor="#F8BBD0" />
-
-                <Button
                     android:id="@+id/btnViewPrimer"
                     style="?android:attr/buttonBarButtonStyle"
                     android:layout_width="match_parent"
@@ -122,20 +108,6 @@
                     android:clickable="false"
                     android:focusable="true"
                     android:text="@string/addBtn"
-                    android:textColor="#F8BBD0" />
-
-                <Button
-                    android:id="@+id/btnRemoveFoundation"
-                    style="?android:attr/buttonBarButtonStyle"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp"
-                    android:layout_weight="1"
-                    android:background="@color/buttons_2"
-                    android:clickable="false"
-                    android:focusable="true"
-                    android:text="@string/removeBtn"
                     android:textColor="#F8BBD0" />
 
                 <Button
@@ -192,20 +164,6 @@
                     android:textColor="#F8BBD0" />
 
                 <Button
-                    android:id="@+id/btnRemoveConcealer"
-                    style="?android:attr/buttonBarButtonStyle"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp"
-                    android:layout_weight="1"
-                    android:background="@color/buttons_2"
-                    android:clickable="false"
-                    android:focusable="true"
-                    android:text="@string/removeBtn"
-                    android:textColor="#F8BBD0" />
-
-                <Button
                     android:id="@+id/btnViewConcealer"
                     style="?android:attr/buttonBarButtonStyle"
                     android:layout_width="match_parent"
@@ -256,20 +214,6 @@
                     android:clickable="false"
                     android:focusable="true"
                     android:text="@string/addBtn"
-                    android:textColor="#F8BBD0" />
-
-                <Button
-                    android:id="@+id/btnRemoveBlush"
-                    style="?android:attr/buttonBarButtonStyle"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp"
-                    android:layout_weight="1"
-                    android:background="@color/buttons_2"
-                    android:clickable="false"
-                    android:focusable="true"
-                    android:text="@string/removeBtn"
                     android:textColor="#F8BBD0" />
 
                 <Button
@@ -326,20 +270,6 @@
                     android:textColor="#F8BBD0" />
 
                 <Button
-                    android:id="@+id/btnRemoveContour"
-                    style="?android:attr/buttonBarButtonStyle"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp"
-                    android:layout_weight="1"
-                    android:background="@color/buttons_2"
-                    android:clickable="true"
-                    android:focusable="true"
-                    android:text="@string/removeBtn"
-                    android:textColor="#F8BBD0" />
-
-                <Button
                     android:id="@+id/btnViewContour"
                     style="?android:attr/buttonBarButtonStyle"
                     android:layout_width="match_parent"
@@ -390,20 +320,6 @@
                     android:clickable="true"
                     android:focusable="true"
                     android:text="@string/addBtn"
-                    android:textColor="#F8BBD0" />
-
-                <Button
-                    android:id="@+id/btnRemoveSettingPowder"
-                    style="?android:attr/buttonBarButtonStyle"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp"
-                    android:layout_weight="1"
-                    android:background="@color/buttons_2"
-                    android:clickable="true"
-                    android:focusable="true"
-                    android:text="@string/removeBtn"
                     android:textColor="#F8BBD0" />
 
                 <Button
@@ -460,20 +376,6 @@
                     android:textColor="#F8BBD0" />
 
                 <Button
-                    android:id="@+id/btnRemoveHighlighter"
-                    style="?android:attr/buttonBarButtonStyle"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp"
-                    android:layout_weight="1"
-                    android:background="@color/buttons_2"
-                    android:clickable="false"
-                    android:focusable="true"
-                    android:text="@string/removeBtn"
-                    android:textColor="#F8BBD0" />
-
-                <Button
                     android:id="@+id/btnViewHighlighter"
                     style="?android:attr/buttonBarButtonStyle"
                     android:layout_width="match_parent"
@@ -524,20 +426,6 @@
                     android:clickable="false"
                     android:focusable="true"
                     android:text="@string/addBtn"
-                    android:textColor="#F8BBD0" />
-
-                <Button
-                    android:id="@+id/btnRemoveBrows"
-                    style="?android:attr/buttonBarButtonStyle"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp"
-                    android:layout_weight="1"
-                    android:background="@color/buttons_2"
-                    android:clickable="true"
-                    android:focusable="true"
-                    android:text="@string/removeBtn"
                     android:textColor="#F8BBD0" />
 
                 <Button
@@ -594,20 +482,6 @@
                     android:textColor="#F8BBD0" />
 
                 <Button
-                    android:id="@+id/btnRemoveEyeshadow"
-                    style="?android:attr/buttonBarButtonStyle"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp"
-                    android:layout_weight="1"
-                    android:background="@color/buttons_2"
-                    android:clickable="false"
-                    android:focusable="true"
-                    android:text="@string/removeBtn"
-                    android:textColor="#F8BBD0" />
-
-                <Button
                     android:id="@+id/btnViewEyeshadow"
                     style="?android:attr/buttonBarButtonStyle"
                     android:layout_width="match_parent"
@@ -658,20 +532,6 @@
                     android:clickable="false"
                     android:focusable="true"
                     android:text="@string/addBtn"
-                    android:textColor="#F8BBD0" />
-
-                <Button
-                    android:id="@+id/btnRemoveEyeliner"
-                    style="?android:attr/buttonBarButtonStyle"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp"
-                    android:layout_weight="1"
-                    android:background="@color/buttons_2"
-                    android:clickable="false"
-                    android:focusable="true"
-                    android:text="@string/removeBtn"
                     android:textColor="#F8BBD0" />
 
                 <Button
@@ -728,20 +588,6 @@
                     android:textColor="#F8BBD0" />
 
                 <Button
-                    android:id="@+id/btnRemoveMascara"
-                    style="?android:attr/buttonBarButtonStyle"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp"
-                    android:layout_weight="1"
-                    android:background="@color/buttons_2"
-                    android:clickable="false"
-                    android:focusable="true"
-                    android:text="@string/removeBtn"
-                    android:textColor="#F8BBD0" />
-
-                <Button
                     android:id="@+id/btnViewMascara"
                     style="?android:attr/buttonBarButtonStyle"
                     android:layout_width="match_parent"
@@ -792,20 +638,6 @@
                     android:clickable="false"
                     android:focusable="true"
                     android:text="@string/addBtn"
-                    android:textColor="#F8BBD0" />
-
-                <Button
-                    android:id="@+id/btnRemoveLipliner"
-                    style="?android:attr/buttonBarButtonStyle"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp"
-                    android:layout_weight="1"
-                    android:background="@color/buttons_2"
-                    android:clickable="false"
-                    android:focusable="true"
-                    android:text="@string/removeBtn"
                     android:textColor="#F8BBD0" />
 
                 <Button
@@ -862,20 +694,6 @@
                     android:textColor="#F8BBD0" />
 
                 <Button
-                    android:id="@+id/btnRemoveLipstick"
-                    style="?android:attr/buttonBarButtonStyle"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp"
-                    android:layout_weight="1"
-                    android:background="@color/buttons_2"
-                    android:clickable="false"
-                    android:focusable="true"
-                    android:text="@string/removeBtn"
-                    android:textColor="#F8BBD0" />
-
-                <Button
                     android:id="@+id/btnViewLipstick"
                     style="?android:attr/buttonBarButtonStyle"
                     android:layout_width="match_parent"
@@ -926,20 +744,6 @@
                     android:clickable="false"
                     android:focusable="true"
                     android:text="@string/addBtn"
-                    android:textColor="#F8BBD0" />
-
-                <Button
-                    android:id="@+id/btnRemoveLipGloss"
-                    style="?android:attr/buttonBarButtonStyle"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp"
-                    android:layout_weight="1"
-                    android:background="@color/buttons_2"
-                    android:clickable="false"
-                    android:focusable="true"
-                    android:text="@string/removeBtn"
                     android:textColor="#F8BBD0" />
 
                 <Button
@@ -996,20 +800,6 @@
                     android:textColor="#F8BBD0" />
 
                 <Button
-                    android:id="@+id/btnRemoveLipBalmOil"
-                    style="?android:attr/buttonBarButtonStyle"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp"
-                    android:layout_weight="1"
-                    android:background="@color/buttons_2"
-                    android:clickable="false"
-                    android:focusable="true"
-                    android:text="@string/removeBtn"
-                    android:textColor="#F8BBD0" />
-
-                <Button
                     android:id="@+id/btnViewLipBalmOil"
                     style="?android:attr/buttonBarButtonStyle"
                     android:layout_width="match_parent"
@@ -1060,20 +850,6 @@
                     android:clickable="false"
                     android:focusable="true"
                     android:text="@string/addBtn"
-                    android:textColor="#F8BBD0" />
-
-                <Button
-                    android:id="@+id/btnRemoveMultiPalette"
-                    style="?android:attr/buttonBarButtonStyle"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp"
-                    android:layout_weight="1"
-                    android:background="@color/buttons_2"
-                    android:clickable="false"
-                    android:focusable="true"
-                    android:text="@string/removeBtn"
                     android:textColor="#F8BBD0" />
 
                 <Button
@@ -1130,20 +906,6 @@
                     android:textColor="#F8BBD0" />
 
                 <Button
-                    android:id="@+id/btnRemoveFinishingSpray"
-                    style="?android:attr/buttonBarButtonStyle"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp"
-                    android:layout_weight="1"
-                    android:background="@color/buttons_2"
-                    android:clickable="false"
-                    android:focusable="true"
-                    android:text="@string/removeBtn"
-                    android:textColor="#F8BBD0" />
-
-                <Button
                     android:id="@+id/btnViewFinishingSpray"
                     style="?android:attr/buttonBarButtonStyle"
                     android:layout_width="match_parent"
@@ -1194,20 +956,6 @@
                     android:clickable="false"
                     android:focusable="true"
                     android:text="@string/addBtn"
-                    android:textColor="#F8BBD0" />
-
-                <Button
-                    android:id="@+id/btnRemoveAccessories"
-                    style="?android:attr/buttonBarButtonStyle"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp"
-                    android:layout_weight="1"
-                    android:background="@color/buttons_2"
-                    android:clickable="false"
-                    android:focusable="true"
-                    android:text="@string/removeBtn"
                     android:textColor="#F8BBD0" />
 
                 <Button

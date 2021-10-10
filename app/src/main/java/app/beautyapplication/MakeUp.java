@@ -19,8 +19,8 @@ public class MakeUp extends AppCompatActivity {
     Button btnAddPrimer, btnAddFoundation, btnAddConcealer, btnAddBlush, btnAddContour, btnAddSettingPowder, btnAddHighlighter, btnAddBrows, btnAddEyeshadow,
             btnAddMascara, btnAddEyeliner, btnAddLipliner, btnAddLipstick, btnAddLipGloss, btnAddLipBalmOil, btnAddMultiPalette, btnAddFinishingSpray, btnAddAccessories;
 
-    Button btnRemovePrimer, btnRemoveFoundation, btnRemoveConcealer, btnRemoveBlush, btnRemoveContour, btnRemoveSettingPowder, btnRemoveHighlighter, btnRemoveBrows, btnRemoveEyeshadow,
-            btnRemoveMascara, btnRemoveEyeliner, btnRemoveLipliner, btnRemoveLipstick, btnRemoveLipGloss, btnRemoveLipBalmOil, btnRemoveMultiPalette, btnRemoveFinishingSpray, btnRemoveAccessories;
+//    Button btnRemovePrimer, btnRemoveFoundation, btnRemoveConcealer, btnRemoveBlush, btnRemoveContour, btnRemoveSettingPowder, btnRemoveHighlighter, btnRemoveBrows, btnRemoveEyeshadow,
+//            btnRemoveMascara, btnRemoveEyeliner, btnRemoveLipliner, btnRemoveLipstick, btnRemoveLipGloss, btnRemoveLipBalmOil, btnRemoveMultiPalette, btnRemoveFinishingSpray, btnRemoveAccessories;
 
     Button btnViewPrimer, btnViewFoundation, btnViewConcealer, btnViewBlush, btnViewContour, btnViewSettingPowder, btnViewHighlighter, btnViewBrows, btnViewEyeshadow,
             btnViewMascara, btnViewEyeliner, btnViewLipliner, btnViewLipstick, btnViewLipGloss, btnViewLipBalmOil, btnViewMultiPalette, btnViewFinishingSpray, btnViewAccessories;
@@ -32,7 +32,7 @@ public class MakeUp extends AppCompatActivity {
 
         LLSetup();
         AddButtonsSetup();
-        RemoveButtonsSetup();
+//        RemoveButtonsSetup();
         ViewButtonsSetup();
 
         btnAddPrimer.setOnClickListener(new View.OnClickListener() {
@@ -181,114 +181,114 @@ public class MakeUp extends AppCompatActivity {
             }
         });
 
-        btnRemovePrimer.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(MakeUp.this, "Removing stuff in primer", Toast.LENGTH_SHORT).show();
-            }
-        });
-        btnRemoveFoundation.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(MakeUp.this, "Removing stuff in foundation", Toast.LENGTH_SHORT).show();
-            }
-        });
-        btnRemoveConcealer.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(MakeUp.this, "Removing stuff in concealer", Toast.LENGTH_SHORT).show();
-            }
-        });
-        btnRemoveBlush.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(MakeUp.this, "Removing stuff in blush", Toast.LENGTH_SHORT).show();
-            }
-        });
-        btnRemoveContour.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(MakeUp.this, "Removing stuff in contour", Toast.LENGTH_SHORT).show();
-            }
-        });
-        btnRemoveSettingPowder.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(MakeUp.this, "Removing stuff in setting powder", Toast.LENGTH_SHORT).show();
-            }
-        });
-        btnRemoveHighlighter.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(MakeUp.this, "Removing stuff in highlighter", Toast.LENGTH_SHORT).show();
-            }
-        });
-        btnRemoveBrows.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(MakeUp.this, "Removing stuff in brows", Toast.LENGTH_SHORT).show();
-            }
-        });
-        btnRemoveEyeshadow.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(MakeUp.this, "Removing stuff in eyeshadow", Toast.LENGTH_SHORT).show();
-            }
-        });
-        btnRemoveMascara.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(MakeUp.this, "Removing stuff in mascara", Toast.LENGTH_SHORT).show();
-            }
-        });
-        btnRemoveEyeliner.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(MakeUp.this, "Removing stuff in eyeliner", Toast.LENGTH_SHORT).show();
-            }
-        });
-        btnRemoveLipliner.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(MakeUp.this, "Removing stuff in lipliner", Toast.LENGTH_SHORT).show();
-            }
-        });
-        btnRemoveLipstick.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(MakeUp.this, "Removing stuff in lipstick", Toast.LENGTH_SHORT).show();
-            }
-        });
-        btnRemoveLipGloss.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(MakeUp.this, "Removing stuff in lip gloss", Toast.LENGTH_SHORT).show();
-            }
-        });
-        btnRemoveLipBalmOil.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(MakeUp.this, "Removing stuff in lip balm/oil", Toast.LENGTH_SHORT).show();
-            }
-        });
-        btnRemoveMultiPalette.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(MakeUp.this, "Removing stuff in multi-palette", Toast.LENGTH_SHORT).show();
-            }
-        });
-        btnRemoveFinishingSpray.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(MakeUp.this, "Removing stuff in finishing spray", Toast.LENGTH_SHORT).show();
-            }
-        });
-        btnRemoveAccessories.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(MakeUp.this, "Removing stuff in accessories", Toast.LENGTH_SHORT).show();
-            }
-        });
+//        btnRemovePrimer.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Toast.makeText(MakeUp.this, "Removing stuff in primer", Toast.LENGTH_SHORT).show();
+//            }
+//        });
+//        btnRemoveFoundation.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Toast.makeText(MakeUp.this, "Removing stuff in foundation", Toast.LENGTH_SHORT).show();
+//            }
+//        });
+//        btnRemoveConcealer.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Toast.makeText(MakeUp.this, "Removing stuff in concealer", Toast.LENGTH_SHORT).show();
+//            }
+//        });
+//        btnRemoveBlush.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Toast.makeText(MakeUp.this, "Removing stuff in blush", Toast.LENGTH_SHORT).show();
+//            }
+//        });
+//        btnRemoveContour.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Toast.makeText(MakeUp.this, "Removing stuff in contour", Toast.LENGTH_SHORT).show();
+//            }
+//        });
+//        btnRemoveSettingPowder.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Toast.makeText(MakeUp.this, "Removing stuff in setting powder", Toast.LENGTH_SHORT).show();
+//            }
+//        });
+//        btnRemoveHighlighter.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Toast.makeText(MakeUp.this, "Removing stuff in highlighter", Toast.LENGTH_SHORT).show();
+//            }
+//        });
+//        btnRemoveBrows.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Toast.makeText(MakeUp.this, "Removing stuff in brows", Toast.LENGTH_SHORT).show();
+//            }
+//        });
+//        btnRemoveEyeshadow.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Toast.makeText(MakeUp.this, "Removing stuff in eyeshadow", Toast.LENGTH_SHORT).show();
+//            }
+//        });
+//        btnRemoveMascara.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Toast.makeText(MakeUp.this, "Removing stuff in mascara", Toast.LENGTH_SHORT).show();
+//            }
+//        });
+//        btnRemoveEyeliner.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Toast.makeText(MakeUp.this, "Removing stuff in eyeliner", Toast.LENGTH_SHORT).show();
+//            }
+//        });
+//        btnRemoveLipliner.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Toast.makeText(MakeUp.this, "Removing stuff in lipliner", Toast.LENGTH_SHORT).show();
+//            }
+//        });
+//        btnRemoveLipstick.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Toast.makeText(MakeUp.this, "Removing stuff in lipstick", Toast.LENGTH_SHORT).show();
+//            }
+//        });
+//        btnRemoveLipGloss.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Toast.makeText(MakeUp.this, "Removing stuff in lip gloss", Toast.LENGTH_SHORT).show();
+//            }
+//        });
+//        btnRemoveLipBalmOil.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Toast.makeText(MakeUp.this, "Removing stuff in lip balm/oil", Toast.LENGTH_SHORT).show();
+//            }
+//        });
+//        btnRemoveMultiPalette.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Toast.makeText(MakeUp.this, "Removing stuff in multi-palette", Toast.LENGTH_SHORT).show();
+//            }
+//        });
+//        btnRemoveFinishingSpray.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Toast.makeText(MakeUp.this, "Removing stuff in finishing spray", Toast.LENGTH_SHORT).show();
+//            }
+//        });
+//        btnRemoveAccessories.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Toast.makeText(MakeUp.this, "Removing stuff in accessories", Toast.LENGTH_SHORT).show();
+//            }
+//        });
 
         btnViewPrimer.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -442,26 +442,26 @@ public class MakeUp extends AppCompatActivity {
         btnAddAccessories = findViewById(R.id.btnAddAccessories);
     }
 
-    void RemoveButtonsSetup() {
-        btnRemovePrimer = findViewById(R.id.btnRemovePrimer);
-        btnRemoveFoundation = findViewById(R.id.btnRemoveFoundation);
-        btnRemoveConcealer = findViewById(R.id.btnRemoveConcealer);
-        btnRemoveBlush = findViewById(R.id.btnRemoveBlush);
-        btnRemoveContour = findViewById(R.id.btnRemoveContour);
-        btnRemoveSettingPowder = findViewById(R.id.btnRemoveSettingPowder);
-        btnRemoveHighlighter = findViewById(R.id.btnRemoveHighlighter);
-        btnRemoveBrows = findViewById(R.id.btnRemoveBrows);
-        btnRemoveEyeshadow = findViewById(R.id.btnRemoveEyeshadow);
-        btnRemoveMascara = findViewById(R.id.btnRemoveMascara);
-        btnRemoveEyeliner = findViewById(R.id.btnRemoveEyeliner);
-        btnRemoveLipliner = findViewById(R.id.btnRemoveLipliner);
-        btnRemoveLipstick = findViewById(R.id.btnRemoveLipstick);
-        btnRemoveLipGloss = findViewById(R.id.btnRemoveLipGloss);
-        btnRemoveLipBalmOil = findViewById(R.id.btnRemoveLipBalmOil);
-        btnRemoveMultiPalette = findViewById(R.id.btnRemoveMultiPalette);
-        btnRemoveFinishingSpray = findViewById(R.id.btnRemoveFinishingSpray);
-        btnRemoveAccessories = findViewById(R.id.btnRemoveAccessories);
-    }
+//    void RemoveButtonsSetup() {
+//        btnRemovePrimer = findViewById(R.id.btnRemovePrimer);
+//        btnRemoveFoundation = findViewById(R.id.btnRemoveFoundation);
+//        btnRemoveConcealer = findViewById(R.id.btnRemoveConcealer);
+//        btnRemoveBlush = findViewById(R.id.btnRemoveBlush);
+//        btnRemoveContour = findViewById(R.id.btnRemoveContour);
+//        btnRemoveSettingPowder = findViewById(R.id.btnRemoveSettingPowder);
+//        btnRemoveHighlighter = findViewById(R.id.btnRemoveHighlighter);
+//        btnRemoveBrows = findViewById(R.id.btnRemoveBrows);
+//        btnRemoveEyeshadow = findViewById(R.id.btnRemoveEyeshadow);
+//        btnRemoveMascara = findViewById(R.id.btnRemoveMascara);
+//        btnRemoveEyeliner = findViewById(R.id.btnRemoveEyeliner);
+//        btnRemoveLipliner = findViewById(R.id.btnRemoveLipliner);
+//        btnRemoveLipstick = findViewById(R.id.btnRemoveLipstick);
+//        btnRemoveLipGloss = findViewById(R.id.btnRemoveLipGloss);
+//        btnRemoveLipBalmOil = findViewById(R.id.btnRemoveLipBalmOil);
+//        btnRemoveMultiPalette = findViewById(R.id.btnRemoveMultiPalette);
+//        btnRemoveFinishingSpray = findViewById(R.id.btnRemoveFinishingSpray);
+//        btnRemoveAccessories = findViewById(R.id.btnRemoveAccessories);
+//    }
 
     void ViewButtonsSetup() {
         btnViewPrimer = findViewById(R.id.btnViewPrimer);

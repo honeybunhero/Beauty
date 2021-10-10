@@ -60,8 +60,7 @@ public class Add_Product extends AppCompatActivity {
                 }
                 dataBaseHelper = new DataBaseHelper(Add_Product.this);
 
-                boolean success = dataBaseHelper.AddOne(et_product.getText().toString(), et_brand.getText().toString(), productType);
-                Toast.makeText(Add_Product.this, "Success = " + success, Toast.LENGTH_SHORT).show();
+                dataBaseHelper.AddOne(et_product.getText().toString(), et_brand.getText().toString(), productType);
             }
         });
 
@@ -70,6 +69,8 @@ public class Add_Product extends AppCompatActivity {
     void BrandButtons() {
 
         // Create buttons and names them after the brands the user entered
+        // TODO Make the buttons populate from the database. This way the et_brand variable will be checked against the database to see if that
+        // TODO brand was already entered before creating a button for it
         final Button btn = new Button(this);
         btn.setText(et_brand.getText().toString());
         btn.setOnClickListener(new View.OnClickListener() {

@@ -19,8 +19,8 @@ public class SkinCare extends AppCompatActivity {
     Button btnAddCleanser, btnAddExfoliators, btnAddWashOffMasks, btnAddSheet_masks, btnAddToners, btnAddEssences, btnAddSerums, btnAddOils, btnAddEyes_care,
             btnAddMoisturizer, btnAddFaceWipes, btnAddLipScrubs, btnAddNailCare, btnAddAccessories;
 
-    Button btnRemoveCleanser, btnRemoveExfoliators, btnRemoveWashOffMasks, btnRemoveSheet_masks, btnRemoveToners, btnRemoveEssences, btnRemoveSerums, btnRemoveOils, btnRemoveEyes_care,
-            btnRemoveMoisturizer, btnRemoveFaceWipes, btnRemoveLipScrubs, btnRemoveNailCare, btnRemoveAccessories;
+//    Button btnRemoveCleanser, btnRemoveExfoliators, btnRemoveWashOffMasks, btnRemoveSheet_masks, btnRemoveToners, btnRemoveEssences, btnRemoveSerums, btnRemoveOils, btnRemoveEyes_care,
+//            btnRemoveMoisturizer, btnRemoveFaceWipes, btnRemoveLipScrubs, btnRemoveNailCare, btnRemoveAccessories;
 
     Button btnViewCleanser, btnViewExfoliators, btnViewWashOffMasks, btnViewSheet_masks, btnViewToners, btnViewEssences, btnViewSerums, btnViewOils, btnViewEyes_care,
             btnViewMoisturizer, btnViewFaceWipes, btnViewLipScrubs, btnViewNailCare, btnViewAccessories;
@@ -33,7 +33,7 @@ public class SkinCare extends AppCompatActivity {
 
         LLSetup();
         AddButtonsSetup();
-        RemoveButtonsSetup();
+//        RemoveButtonsSetup();
         ViewButtonsSetup();
 
         btnAddCleanser.setOnClickListener(new View.OnClickListener() {
@@ -125,90 +125,90 @@ public class SkinCare extends AppCompatActivity {
         });
 
 
-        btnRemoveCleanser.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(SkinCare.this, "Removing stuff in cleanser", Toast.LENGTH_SHORT).show();
-            }
-        });
-        btnRemoveExfoliators.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(SkinCare.this, "Removing stuff in exfoliators", Toast.LENGTH_SHORT).show();
-            }
-        });
-        btnRemoveWashOffMasks.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(SkinCare.this, "Removing stuff in wash off masks", Toast.LENGTH_SHORT).show();
-            }
-        });
-        btnRemoveSheet_masks.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(SkinCare.this, "Removing stuff in sheet masks", Toast.LENGTH_SHORT).show();
-            }
-        });
-        btnRemoveToners.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(SkinCare.this, "Removing stuff in toners", Toast.LENGTH_SHORT).show();
-            }
-        });
-        btnRemoveEssences.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(SkinCare.this, "Removing stuff in eessences", Toast.LENGTH_SHORT).show();
-            }
-        });
-        btnRemoveSerums.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(SkinCare.this, "Removing stuff in serums", Toast.LENGTH_SHORT).show();
-            }
-        });
-        btnRemoveOils.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(SkinCare.this, "Removing stuff in oils", Toast.LENGTH_SHORT).show();
-            }
-        });
-        btnRemoveEyes_care.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(SkinCare.this, "Removing stuff in eye care", Toast.LENGTH_SHORT).show();
-            }
-        });
-        btnRemoveMoisturizer.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(SkinCare.this, "Removing stuff in moisturizer", Toast.LENGTH_SHORT).show();
-            }
-        });
-        btnRemoveFaceWipes.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(SkinCare.this, "Removing stuff in face wipes", Toast.LENGTH_SHORT).show();
-            }
-        });
-        btnRemoveLipScrubs.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(SkinCare.this, "Removing stuff in lip scrubs", Toast.LENGTH_SHORT).show();
-            }
-        });
-        btnRemoveNailCare.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(SkinCare.this, "Removing stuff in nail care", Toast.LENGTH_SHORT).show();
-            }
-        });
-        btnRemoveAccessories.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(SkinCare.this, "Removing stuff in accessories", Toast.LENGTH_SHORT).show();
-            }
-        });
+//        btnRemoveCleanser.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Toast.makeText(SkinCare.this, "Removing stuff in cleanser", Toast.LENGTH_SHORT).show();
+//            }
+//        });
+//        btnRemoveExfoliators.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Toast.makeText(SkinCare.this, "Removing stuff in exfoliators", Toast.LENGTH_SHORT).show();
+//            }
+//        });
+//        btnRemoveWashOffMasks.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Toast.makeText(SkinCare.this, "Removing stuff in wash off masks", Toast.LENGTH_SHORT).show();
+//            }
+//        });
+//        btnRemoveSheet_masks.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Toast.makeText(SkinCare.this, "Removing stuff in sheet masks", Toast.LENGTH_SHORT).show();
+//            }
+//        });
+//        btnRemoveToners.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Toast.makeText(SkinCare.this, "Removing stuff in toners", Toast.LENGTH_SHORT).show();
+//            }
+//        });
+//        btnRemoveEssences.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Toast.makeText(SkinCare.this, "Removing stuff in eessences", Toast.LENGTH_SHORT).show();
+//            }
+//        });
+//        btnRemoveSerums.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Toast.makeText(SkinCare.this, "Removing stuff in serums", Toast.LENGTH_SHORT).show();
+//            }
+//        });
+//        btnRemoveOils.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Toast.makeText(SkinCare.this, "Removing stuff in oils", Toast.LENGTH_SHORT).show();
+//            }
+//        });
+//        btnRemoveEyes_care.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Toast.makeText(SkinCare.this, "Removing stuff in eye care", Toast.LENGTH_SHORT).show();
+//            }
+//        });
+//        btnRemoveMoisturizer.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Toast.makeText(SkinCare.this, "Removing stuff in moisturizer", Toast.LENGTH_SHORT).show();
+//            }
+//        });
+//        btnRemoveFaceWipes.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Toast.makeText(SkinCare.this, "Removing stuff in face wipes", Toast.LENGTH_SHORT).show();
+//            }
+//        });
+//        btnRemoveLipScrubs.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Toast.makeText(SkinCare.this, "Removing stuff in lip scrubs", Toast.LENGTH_SHORT).show();
+//            }
+//        });
+//        btnRemoveNailCare.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Toast.makeText(SkinCare.this, "Removing stuff in nail care", Toast.LENGTH_SHORT).show();
+//            }
+//        });
+//        btnRemoveAccessories.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Toast.makeText(SkinCare.this, "Removing stuff in accessories", Toast.LENGTH_SHORT).show();
+//            }
+//        });
 
         btnViewCleanser.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -314,22 +314,22 @@ public class SkinCare extends AppCompatActivity {
         btnViewAccessories = findViewById(R.id.btnViewAccessories);
     }
 
-    void RemoveButtonsSetup() {
-        btnRemoveCleanser = findViewById(R.id.btnRemoveCleanser);
-        btnRemoveExfoliators = findViewById(R.id.btnRemoveExfoliators);
-        btnRemoveWashOffMasks = findViewById(R.id.btnRemoveWashOffMasks);
-        btnRemoveSheet_masks = findViewById(R.id.btnRemoveSheet_masks);
-        btnRemoveToners = findViewById(R.id.btnRemoveToners);
-        btnRemoveEssences = findViewById(R.id.btnRemoveEssences);
-        btnRemoveSerums = findViewById(R.id.btnRemoveSerums);
-        btnRemoveOils = findViewById(R.id.btnRemoveOils);
-        btnRemoveEyes_care = findViewById(R.id.btnRemoveEyes_care);
-        btnRemoveMoisturizer = findViewById(R.id.btnRemoveMoisturizer);
-        btnRemoveFaceWipes = findViewById(R.id.btnRemoveFaceWipes);
-        btnRemoveLipScrubs = findViewById(R.id.btnRemoveLipScrubs);
-        btnRemoveNailCare = findViewById(R.id.btnRemoveNailCare);
-        btnRemoveAccessories = findViewById(R.id.btnRemoveAccessories);
-    }
+//    void RemoveButtonsSetup() {
+//        btnRemoveCleanser = findViewById(R.id.btnRemoveCleanser);
+//        btnRemoveExfoliators = findViewById(R.id.btnRemoveExfoliators);
+//        btnRemoveWashOffMasks = findViewById(R.id.btnRemoveWashOffMasks);
+//        btnRemoveSheet_masks = findViewById(R.id.btnRemoveSheet_masks);
+//        btnRemoveToners = findViewById(R.id.btnRemoveToners);
+//        btnRemoveEssences = findViewById(R.id.btnRemoveEssences);
+//        btnRemoveSerums = findViewById(R.id.btnRemoveSerums);
+//        btnRemoveOils = findViewById(R.id.btnRemoveOils);
+//        btnRemoveEyes_care = findViewById(R.id.btnRemoveEyes_care);
+//        btnRemoveMoisturizer = findViewById(R.id.btnRemoveMoisturizer);
+//        btnRemoveFaceWipes = findViewById(R.id.btnRemoveFaceWipes);
+//        btnRemoveLipScrubs = findViewById(R.id.btnRemoveLipScrubs);
+//        btnRemoveNailCare = findViewById(R.id.btnRemoveNailCare);
+//        btnRemoveAccessories = findViewById(R.id.btnRemoveAccessories);
+//    }
 
     void AddButtonsSetup() {
         btnAddCleanser = findViewById(R.id.btnAddCleanser);
