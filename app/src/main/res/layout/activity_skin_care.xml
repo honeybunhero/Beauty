@@ -623,7 +623,7 @@
             </LinearLayout>
 
             <Button
-                android:id="@+id/btn_moisturizure"
+                android:id="@+id/btn_moisturizer"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
@@ -633,13 +633,13 @@
                 android:background="@color/buttons_1"
                 android:clickable="true"
                 android:focusable="true"
-                android:onClick="OnMoisturizureClick"
-                android:text="@string/moisturizure"
+                android:onClick="OnMoisturizerClick"
+                android:text="@string/moisturizer"
                 android:textColor="@color/text"
                 android:textSize="20sp" />
 
             <LinearLayout
-                android:id="@+id/ll_moisturizure"
+                android:id="@+id/ll_moisturizer"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_gravity="center_horizontal"
@@ -647,7 +647,7 @@
                 android:visibility="gone">
 
                 <Button
-                    android:id="@+id/btnAddMoisturizure"
+                    android:id="@+id/btnAddMoisturizer"
                     style="?android:attr/buttonBarButtonStyle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -661,7 +661,7 @@
                     android:textColor="#F8BBD0" />
 
                 <Button
-                    android:id="@+id/btnRemoveMoisturizure"
+                    android:id="@+id/btnRemoveMoisturizer"
                     style="?android:attr/buttonBarButtonStyle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -675,7 +675,7 @@
                     android:textColor="#F8BBD0" />
 
                 <Button
-                    android:id="@+id/btnViewMoisturizure"
+                    android:id="@+id/btnViewMoisturizer"
                     style="?android:attr/buttonBarButtonStyle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

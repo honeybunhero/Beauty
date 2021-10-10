@@ -18,8 +18,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         btn_MakeUp = findViewById(R.id.btn_MakeUp);
         btn_SkinCare = findViewById(R.id.btn_SkinCare);
-
-
     }
 
     public void OnSkinCareClick(View v) {

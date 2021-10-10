@@ -2,24 +2,29 @@ package app.beautyapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 public class SkinCare extends AppCompatActivity {
 
-    LinearLayout ll_cleanser, ll_exfoliators, ll_wash_off_masks, ll_sheet_masks, ll_toners, ll_essences, ll_serums, ll_oils, ll_eyes_care, ll_moisturizure,
+    public static final String SKIN_CARE_PRODUCT_TYPE_TEXT = "app.beautyapplication.SKIN_CARE_PRODUCT_TYPE_TEXT";
+
+    LinearLayout ll_cleanser, ll_exfoliators, ll_wash_off_masks, ll_sheet_masks, ll_toners, ll_essences, ll_serums, ll_oils, ll_eyes_care, ll_moisturizer,
             ll_face_wipes, ll_lip_scrubs, ll_nail_care, ll_accessories;
 
     Button btnAddCleanser, btnAddExfoliators, btnAddWashOffMasks, btnAddSheet_masks, btnAddToners, btnAddEssences, btnAddSerums, btnAddOils, btnAddEyes_care,
-            btnAddMoisturizure, btnAddFaceWipes, btnAddLipScrubs, btnAddNailCare, btnAddAccessories;
+            btnAddMoisturizer, btnAddFaceWipes, btnAddLipScrubs, btnAddNailCare, btnAddAccessories;
 
     Button btnRemoveCleanser, btnRemoveExfoliators, btnRemoveWashOffMasks, btnRemoveSheet_masks, btnRemoveToners, btnRemoveEssences, btnRemoveSerums, btnRemoveOils, btnRemoveEyes_care,
-            btnRemoveMoisturizure, btnRemoveFaceWipes, btnRemoveLipScrubs, btnRemoveNailCare, btnRemoveAccessories;
+            btnRemoveMoisturizer, btnRemoveFaceWipes, btnRemoveLipScrubs, btnRemoveNailCare, btnRemoveAccessories;
 
     Button btnViewCleanser, btnViewExfoliators, btnViewWashOffMasks, btnViewSheet_masks, btnViewToners, btnViewEssences, btnViewSerums, btnViewOils, btnViewEyes_care,
-            btnViewMoisturizure, btnViewFaceWipes, btnViewLipScrubs, btnViewNailCare, btnViewAccessories;
+            btnViewMoisturizer, btnViewFaceWipes, btnViewLipScrubs, btnViewNailCare, btnViewAccessories;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +35,265 @@ public class SkinCare extends AppCompatActivity {
         AddButtonsSetup();
         RemoveButtonsSetup();
         ViewButtonsSetup();
+
+        btnAddCleanser.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+//                Toast.makeText(SkinCare.this, "Adding stuff in cleanser", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(SkinCare.this, Add_Product.class);
+                intent.putExtra(SKIN_CARE_PRODUCT_TYPE_TEXT, "Cleanser");
+                startActivity(intent);
+            }
+        });
+        btnAddExfoliators.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(SkinCare.this, "Adding stuff in exfoliators", Toast.LENGTH_SHORT).show();
+            }
+        });
+        btnAddWashOffMasks.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(SkinCare.this, "Adding stuff in wash off masks", Toast.LENGTH_SHORT).show();
+            }
+        });
+        btnAddSheet_masks.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(SkinCare.this, "Adding stuff in sheet masks", Toast.LENGTH_SHORT).show();
+            }
+        });
+        btnAddToners.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(SkinCare.this, "Adding stuff in toners", Toast.LENGTH_SHORT).show();
+            }
+        });
+        btnAddEssences.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(SkinCare.this, "Adding stuff in essences", Toast.LENGTH_SHORT).show();
+            }
+        });
+        btnAddSerums.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(SkinCare.this, "Adding stuff in serums", Toast.LENGTH_SHORT).show();
+            }
+        });
+        btnAddOils.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(SkinCare.this, "Adding stuff in oils", Toast.LENGTH_SHORT).show();
+            }
+        });
+        btnAddEyes_care.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(SkinCare.this, "Adding stuff in eye care", Toast.LENGTH_SHORT).show();
+            }
+        });
+        btnAddMoisturizer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(SkinCare.this, "Adding stuff in moisturizer", Toast.LENGTH_SHORT).show();
+            }
+        });
+        btnAddFaceWipes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(SkinCare.this, "Adding stuff in face wipes", Toast.LENGTH_SHORT).show();
+            }
+        });
+        btnAddLipScrubs.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(SkinCare.this, "Adding stuff in lip scrubs", Toast.LENGTH_SHORT).show();
+            }
+        });
+        btnAddNailCare.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(SkinCare.this, "Adding stuff in nail care", Toast.LENGTH_SHORT).show();
+            }
+        });
+        btnAddAccessories.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(SkinCare.this, "Adding stuff in accessories", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+
+        btnRemoveCleanser.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(SkinCare.this, "Removing stuff in cleanser", Toast.LENGTH_SHORT).show();
+            }
+        });
+        btnRemoveExfoliators.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(SkinCare.this, "Removing stuff in exfoliators", Toast.LENGTH_SHORT).show();
+            }
+        });
+        btnRemoveWashOffMasks.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(SkinCare.this, "Removing stuff in wash off masks", Toast.LENGTH_SHORT).show();
+            }
+        });
+        btnRemoveSheet_masks.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(SkinCare.this, "Removing stuff in sheet masks", Toast.LENGTH_SHORT).show();
+            }
+        });
+        btnRemoveToners.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(SkinCare.this, "Removing stuff in toners", Toast.LENGTH_SHORT).show();
+            }
+        });
+        btnRemoveEssences.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(SkinCare.this, "Removing stuff in eessences", Toast.LENGTH_SHORT).show();
+            }
+        });
+        btnRemoveSerums.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(SkinCare.this, "Removing stuff in serums", Toast.LENGTH_SHORT).show();
+            }
+        });
+        btnRemoveOils.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(SkinCare.this, "Removing stuff in oils", Toast.LENGTH_SHORT).show();
+            }
+        });
+        btnRemoveEyes_care.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(SkinCare.this, "Removing stuff in eye care", Toast.LENGTH_SHORT).show();
+            }
+        });
+        btnRemoveMoisturizer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(SkinCare.this, "Removing stuff in moisturizer", Toast.LENGTH_SHORT).show();
+            }
+        });
+        btnRemoveFaceWipes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(SkinCare.this, "Removing stuff in face wipes", Toast.LENGTH_SHORT).show();
+            }
+        });
+        btnRemoveLipScrubs.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(SkinCare.this, "Removing stuff in lip scrubs", Toast.LENGTH_SHORT).show();
+            }
+        });
+        btnRemoveNailCare.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(SkinCare.this, "Removing stuff in nail care", Toast.LENGTH_SHORT).show();
+            }
+        });
+        btnRemoveAccessories.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(SkinCare.this, "Removing stuff in accessories", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        btnViewCleanser.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(SkinCare.this, "View stuff in cleanser", Toast.LENGTH_SHORT).show();
+            }
+        });
+        btnViewExfoliators.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(SkinCare.this, "View stuff in exfoliators", Toast.LENGTH_SHORT).show();
+            }
+        });
+        btnViewWashOffMasks.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(SkinCare.this, "View stuff in wash off masks", Toast.LENGTH_SHORT).show();
+            }
+        });
+        btnViewSheet_masks.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(SkinCare.this, "View stuff in sheet masks", Toast.LENGTH_SHORT).show();
+            }
+        });
+        btnViewToners.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(SkinCare.this, "View stuff in toners", Toast.LENGTH_SHORT).show();
+            }
+        });
+        btnViewEssences.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(SkinCare.this, "View stuff in essences", Toast.LENGTH_SHORT).show();
+            }
+        });
+        btnViewSerums.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(SkinCare.this, "View stuff in serums", Toast.LENGTH_SHORT).show();
+            }
+        });
+        btnViewOils.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(SkinCare.this, "View stuff in oils", Toast.LENGTH_SHORT).show();
+            }
+        });
+        btnViewEyes_care.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(SkinCare.this, "View stuff in eye care", Toast.LENGTH_SHORT).show();
+            }
+        });
+        btnViewMoisturizer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(SkinCare.this, "View stuff in moisturizer", Toast.LENGTH_SHORT).show();
+            }
+        });
+        btnViewFaceWipes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(SkinCare.this, "View stuff in face wipes", Toast.LENGTH_SHORT).show();
+            }
+        });
+        btnViewLipScrubs.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(SkinCare.this, "View stuff in lip scrubs", Toast.LENGTH_SHORT).show();
+            }
+        });
+        btnViewNailCare.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(SkinCare.this, "View stuff in nail care", Toast.LENGTH_SHORT).show();
+            }
+        });
+        btnViewAccessories.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(SkinCare.this, "View stuff in accessories", Toast.LENGTH_SHORT).show();
+            }
+        });
 
     }
 
@@ -43,7 +307,7 @@ public class SkinCare extends AppCompatActivity {
         btnViewSerums = findViewById(R.id.btnViewSerums);
         btnViewOils = findViewById(R.id.btnViewOils);
         btnViewEyes_care = findViewById(R.id.btnViewEyes_care);
-        btnViewMoisturizure = findViewById(R.id.btnViewMoisturizure);
+        btnViewMoisturizer = findViewById(R.id.btnViewMoisturizer);
         btnViewFaceWipes = findViewById(R.id.btnViewFaceWipes);
         btnViewLipScrubs = findViewById(R.id.btnViewLipScrubs);
         btnViewNailCare = findViewById(R.id.btnViewNailCare);
@@ -60,7 +324,7 @@ public class SkinCare extends AppCompatActivity {
         btnRemoveSerums = findViewById(R.id.btnRemoveSerums);
         btnRemoveOils = findViewById(R.id.btnRemoveOils);
         btnRemoveEyes_care = findViewById(R.id.btnRemoveEyes_care);
-        btnRemoveMoisturizure = findViewById(R.id.btnRemoveMoisturizure);
+        btnRemoveMoisturizer = findViewById(R.id.btnRemoveMoisturizer);
         btnRemoveFaceWipes = findViewById(R.id.btnRemoveFaceWipes);
         btnRemoveLipScrubs = findViewById(R.id.btnRemoveLipScrubs);
         btnRemoveNailCare = findViewById(R.id.btnRemoveNailCare);
@@ -77,7 +341,7 @@ public class SkinCare extends AppCompatActivity {
         btnAddSerums = findViewById(R.id.btnAddSerums);
         btnAddOils = findViewById(R.id.btnAddOils);
         btnAddEyes_care = findViewById(R.id.btnAddEyes_care);
-        btnAddMoisturizure = findViewById(R.id.btnAddMoisturizure);
+        btnAddMoisturizer = findViewById(R.id.btnAddMoisturizer);
         btnAddFaceWipes = findViewById(R.id.btnAddFaceWipes);
         btnAddLipScrubs = findViewById(R.id.btnAddLipScrubs);
         btnAddNailCare = findViewById(R.id.btnAddNailCare);
@@ -94,7 +358,7 @@ public class SkinCare extends AppCompatActivity {
         ll_serums = findViewById(R.id.ll_serums);
         ll_oils = findViewById(R.id.ll_oils);
         ll_eyes_care = findViewById(R.id.ll_eyes_care);
-        ll_moisturizure = findViewById(R.id.ll_moisturizure);
+        ll_moisturizer = findViewById(R.id.ll_moisturizer);
         ll_face_wipes = findViewById(R.id.ll_face_wipes);
         ll_lip_scrubs = findViewById(R.id.ll_lip_scrubs);
         ll_nail_care = findViewById(R.id.ll_nail_care);
@@ -114,7 +378,7 @@ public class SkinCare extends AppCompatActivity {
             ll_serums.setVisibility(View.GONE);
             ll_oils.setVisibility(View.GONE);
             ll_eyes_care.setVisibility(View.GONE);
-            ll_moisturizure.setVisibility(View.GONE);
+            ll_moisturizer.setVisibility(View.GONE);
             ll_face_wipes.setVisibility(View.GONE);
             ll_lip_scrubs.setVisibility(View.GONE);
             ll_nail_care.setVisibility(View.GONE);
@@ -135,7 +399,7 @@ public class SkinCare extends AppCompatActivity {
             ll_serums.setVisibility(View.GONE);
             ll_oils.setVisibility(View.GONE);
             ll_eyes_care.setVisibility(View.GONE);
-            ll_moisturizure.setVisibility(View.GONE);
+            ll_moisturizer.setVisibility(View.GONE);
             ll_face_wipes.setVisibility(View.GONE);
             ll_lip_scrubs.setVisibility(View.GONE);
             ll_nail_care.setVisibility(View.GONE);
@@ -156,7 +420,7 @@ public class SkinCare extends AppCompatActivity {
             ll_serums.setVisibility(View.GONE);
             ll_oils.setVisibility(View.GONE);
             ll_eyes_care.setVisibility(View.GONE);
-            ll_moisturizure.setVisibility(View.GONE);
+            ll_moisturizer.setVisibility(View.GONE);
             ll_face_wipes.setVisibility(View.GONE);
             ll_lip_scrubs.setVisibility(View.GONE);
             ll_nail_care.setVisibility(View.GONE);
@@ -177,7 +441,7 @@ public class SkinCare extends AppCompatActivity {
             ll_serums.setVisibility(View.GONE);
             ll_oils.setVisibility(View.GONE);
             ll_eyes_care.setVisibility(View.GONE);
-            ll_moisturizure.setVisibility(View.GONE);
+            ll_moisturizer.setVisibility(View.GONE);
             ll_face_wipes.setVisibility(View.GONE);
             ll_lip_scrubs.setVisibility(View.GONE);
             ll_nail_care.setVisibility(View.GONE);
@@ -198,7 +462,7 @@ public class SkinCare extends AppCompatActivity {
             ll_serums.setVisibility(View.GONE);
             ll_oils.setVisibility(View.GONE);
             ll_eyes_care.setVisibility(View.GONE);
-            ll_moisturizure.setVisibility(View.GONE);
+            ll_moisturizer.setVisibility(View.GONE);
             ll_face_wipes.setVisibility(View.GONE);
             ll_lip_scrubs.setVisibility(View.GONE);
             ll_nail_care.setVisibility(View.GONE);
@@ -219,7 +483,7 @@ public class SkinCare extends AppCompatActivity {
             ll_serums.setVisibility(View.GONE);
             ll_oils.setVisibility(View.GONE);
             ll_eyes_care.setVisibility(View.GONE);
-            ll_moisturizure.setVisibility(View.GONE);
+            ll_moisturizer.setVisibility(View.GONE);
             ll_face_wipes.setVisibility(View.GONE);
             ll_lip_scrubs.setVisibility(View.GONE);
             ll_nail_care.setVisibility(View.GONE);
@@ -240,7 +504,7 @@ public class SkinCare extends AppCompatActivity {
             ll_serums.setVisibility(View.VISIBLE);
             ll_oils.setVisibility(View.GONE);
             ll_eyes_care.setVisibility(View.GONE);
-            ll_moisturizure.setVisibility(View.GONE);
+            ll_moisturizer.setVisibility(View.GONE);
             ll_face_wipes.setVisibility(View.GONE);
             ll_lip_scrubs.setVisibility(View.GONE);
             ll_nail_care.setVisibility(View.GONE);
@@ -261,7 +525,7 @@ public class SkinCare extends AppCompatActivity {
             ll_serums.setVisibility(View.GONE);
             ll_oils.setVisibility(View.VISIBLE);
             ll_eyes_care.setVisibility(View.GONE);
-            ll_moisturizure.setVisibility(View.GONE);
+            ll_moisturizer.setVisibility(View.GONE);
             ll_face_wipes.setVisibility(View.GONE);
             ll_lip_scrubs.setVisibility(View.GONE);
             ll_nail_care.setVisibility(View.GONE);
@@ -282,7 +546,7 @@ public class SkinCare extends AppCompatActivity {
             ll_serums.setVisibility(View.GONE);
             ll_oils.setVisibility(View.GONE);
             ll_eyes_care.setVisibility(View.VISIBLE);
-            ll_moisturizure.setVisibility(View.GONE);
+            ll_moisturizer.setVisibility(View.GONE);
             ll_face_wipes.setVisibility(View.GONE);
             ll_lip_scrubs.setVisibility(View.GONE);
             ll_nail_care.setVisibility(View.GONE);
@@ -290,9 +554,9 @@ public class SkinCare extends AppCompatActivity {
         }
     }
 
-    public void OnMoisturizureClick(View v) {
-        if (ll_moisturizure.getVisibility() == View.VISIBLE) {
-            ll_moisturizure.setVisibility(View.GONE);
+    public void OnMoisturizerClick(View v) {
+        if (ll_moisturizer.getVisibility() == View.VISIBLE) {
+            ll_moisturizer.setVisibility(View.GONE);
         } else {
             ll_cleanser.setVisibility(View.GONE);
             ll_exfoliators.setVisibility(View.GONE);
@@ -303,7 +567,7 @@ public class SkinCare extends AppCompatActivity {
             ll_serums.setVisibility(View.GONE);
             ll_oils.setVisibility(View.GONE);
             ll_eyes_care.setVisibility(View.GONE);
-            ll_moisturizure.setVisibility(View.VISIBLE);
+            ll_moisturizer.setVisibility(View.VISIBLE);
             ll_face_wipes.setVisibility(View.GONE);
             ll_lip_scrubs.setVisibility(View.GONE);
             ll_nail_care.setVisibility(View.GONE);
@@ -324,7 +588,7 @@ public class SkinCare extends AppCompatActivity {
             ll_serums.setVisibility(View.GONE);
             ll_oils.setVisibility(View.GONE);
             ll_eyes_care.setVisibility(View.GONE);
-            ll_moisturizure.setVisibility(View.GONE);
+            ll_moisturizer.setVisibility(View.GONE);
             ll_face_wipes.setVisibility(View.VISIBLE);
             ll_lip_scrubs.setVisibility(View.GONE);
             ll_nail_care.setVisibility(View.GONE);
@@ -345,7 +609,7 @@ public class SkinCare extends AppCompatActivity {
             ll_serums.setVisibility(View.GONE);
             ll_oils.setVisibility(View.GONE);
             ll_eyes_care.setVisibility(View.GONE);
-            ll_moisturizure.setVisibility(View.GONE);
+            ll_moisturizer.setVisibility(View.GONE);
             ll_face_wipes.setVisibility(View.GONE);
             ll_lip_scrubs.setVisibility(View.VISIBLE);
             ll_nail_care.setVisibility(View.GONE);
@@ -366,7 +630,7 @@ public class SkinCare extends AppCompatActivity {
             ll_serums.setVisibility(View.GONE);
             ll_oils.setVisibility(View.GONE);
             ll_eyes_care.setVisibility(View.GONE);
-            ll_moisturizure.setVisibility(View.GONE);
+            ll_moisturizer.setVisibility(View.GONE);
             ll_face_wipes.setVisibility(View.GONE);
             ll_lip_scrubs.setVisibility(View.GONE);
             ll_nail_care.setVisibility(View.VISIBLE);
@@ -387,7 +651,7 @@ public class SkinCare extends AppCompatActivity {
             ll_serums.setVisibility(View.GONE);
             ll_oils.setVisibility(View.GONE);
             ll_eyes_care.setVisibility(View.GONE);
-            ll_moisturizure.setVisibility(View.GONE);
+            ll_moisturizer.setVisibility(View.GONE);
             ll_face_wipes.setVisibility(View.GONE);
             ll_lip_scrubs.setVisibility(View.GONE);
             ll_nail_care.setVisibility(View.GONE);
