@@ -13,14 +13,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/product_name"
-        android:textColor="@color/text" />
+        android:textColor="@color/text"/>
 
     <EditText
         android:id="@+id/et_brand"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/brand_name"
-        android:textColor="@color/text" />
+        android:minHeight="48dp"
+        android:textColor="@color/text"
+        tools:ignore="TextContrastCheck"/>
 
     <Button
         android:id="@+id/btn_add"
@@ -39,9 +41,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginStart="5dp"
-        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="5dp"
-        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
         android:layout_weight="0"
         tools:ignore="SpeakableTextPresentCheck">
 

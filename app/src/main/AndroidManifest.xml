@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BeautyApplication">
         <activity
+            android:name=".View_Products"
+            android:exported="true" />
+        <activity
             android:name=".Add_Product"
             android:exported="true" />
         <activity

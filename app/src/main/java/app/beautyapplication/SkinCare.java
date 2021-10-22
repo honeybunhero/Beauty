@@ -48,79 +48,117 @@ public class SkinCare extends AppCompatActivity {
         btnAddExfoliators.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(SkinCare.this, "Adding stuff in exfoliators", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(SkinCare.this, Add_Product.class);
+                intent.putExtra(SKIN_CARE_PRODUCT_TYPE_TEXT, "Exfoliates");
+                startActivity(intent);
             }
         });
         btnAddWashOffMasks.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(SkinCare.this, "Adding stuff in wash off masks", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(SkinCare.this, "Adding stuff in wash off masks", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(SkinCare.this, Add_Product.class);
+                intent.putExtra(SKIN_CARE_PRODUCT_TYPE_TEXT, "Wash Off Masks");
+                startActivity(intent);
             }
         });
         btnAddSheet_masks.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(SkinCare.this, "Adding stuff in sheet masks", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(SkinCare.this, "Adding stuff in sheet masks", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(SkinCare.this, Add_Product.class);
+                intent.putExtra(SKIN_CARE_PRODUCT_TYPE_TEXT, "Sheet Mask");
+                startActivity(intent);
             }
         });
         btnAddToners.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(SkinCare.this, "Adding stuff in toners", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(SkinCare.this, "Adding stuff in toners", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(SkinCare.this, Add_Product.class);
+                intent.putExtra(SKIN_CARE_PRODUCT_TYPE_TEXT, "Toner");
+                startActivity(intent);
             }
         });
         btnAddEssences.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(SkinCare.this, "Adding stuff in essences", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(SkinCare.this, "Adding stuff in essences", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(SkinCare.this, Add_Product.class);
+                intent.putExtra(SKIN_CARE_PRODUCT_TYPE_TEXT, "Essence");
+                startActivity(intent);
             }
         });
         btnAddSerums.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(SkinCare.this, "Adding stuff in serums", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(SkinCare.this, "Adding stuff in serums", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(SkinCare.this, Add_Product.class);
+                intent.putExtra(SKIN_CARE_PRODUCT_TYPE_TEXT, "Serum");
+                startActivity(intent);
             }
         });
         btnAddOils.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(SkinCare.this, "Adding stuff in oils", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(SkinCare.this, "Adding stuff in oils", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(SkinCare.this, Add_Product.class);
+                intent.putExtra(SKIN_CARE_PRODUCT_TYPE_TEXT, "Oil");
+                startActivity(intent);
             }
         });
         btnAddEyes_care.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(SkinCare.this, "Adding stuff in eye care", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(SkinCare.this, "Adding stuff in eye care", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(SkinCare.this, Add_Product.class);
+                intent.putExtra(SKIN_CARE_PRODUCT_TYPE_TEXT, "Eye Care");
+                startActivity(intent);
             }
         });
         btnAddMoisturizer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(SkinCare.this, "Adding stuff in moisturizer", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(SkinCare.this, "Adding stuff in moisturizer", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(SkinCare.this, Add_Product.class);
+                intent.putExtra(SKIN_CARE_PRODUCT_TYPE_TEXT, "Moisturizer");
+                startActivity(intent);
             }
         });
         btnAddFaceWipes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(SkinCare.this, "Adding stuff in face wipes", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(SkinCare.this, "Adding stuff in face wipes", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(SkinCare.this, Add_Product.class);
+                intent.putExtra(SKIN_CARE_PRODUCT_TYPE_TEXT, "Wipes");
+                startActivity(intent);
             }
         });
         btnAddLipScrubs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(SkinCare.this, "Adding stuff in lip scrubs", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(SkinCare.this, "Adding stuff in lip scrubs", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(SkinCare.this, Add_Product.class);
+                intent.putExtra(SKIN_CARE_PRODUCT_TYPE_TEXT, "Lip Scrub");
+                startActivity(intent);
             }
         });
         btnAddNailCare.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(SkinCare.this, "Adding stuff in nail care", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(SkinCare.this, "Adding stuff in nail care", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(SkinCare.this, Add_Product.class);
+                intent.putExtra(SKIN_CARE_PRODUCT_TYPE_TEXT, "Nail Care");
+                startActivity(intent);
             }
         });
         btnAddAccessories.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(SkinCare.this, "Adding stuff in accessories", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(SkinCare.this, "Adding stuff in accessories", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(SkinCare.this, Add_Product.class);
+                intent.putExtra(SKIN_CARE_PRODUCT_TYPE_TEXT, "Skin Care Accessories");
+                startActivity(intent);
             }
         });
 
@@ -213,85 +251,113 @@ public class SkinCare extends AppCompatActivity {
         btnViewCleanser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(SkinCare.this, "View stuff in cleanser", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(SkinCare.this, View_Products.class);
+                intent.putExtra(SKIN_CARE_PRODUCT_TYPE_TEXT, "Cleanser");
+                startActivity(intent);
             }
         });
         btnViewExfoliators.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(SkinCare.this, "View stuff in exfoliators", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(SkinCare.this, View_Products.class);
+                intent.putExtra(SKIN_CARE_PRODUCT_TYPE_TEXT, "Exfoliates");
+                startActivity(intent);
             }
         });
         btnViewWashOffMasks.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(SkinCare.this, "View stuff in wash off masks", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(SkinCare.this, View_Products.class);
+                intent.putExtra(SKIN_CARE_PRODUCT_TYPE_TEXT, "Wash Off Masks");
+                startActivity(intent);
             }
         });
         btnViewSheet_masks.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(SkinCare.this, "View stuff in sheet masks", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(SkinCare.this, View_Products.class);
+                intent.putExtra(SKIN_CARE_PRODUCT_TYPE_TEXT, "Sheet Mask");
+                startActivity(intent);
             }
         });
         btnViewToners.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(SkinCare.this, "View stuff in toners", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(SkinCare.this, View_Products.class);
+                intent.putExtra(SKIN_CARE_PRODUCT_TYPE_TEXT, "Toner");
+                startActivity(intent);
             }
         });
         btnViewEssences.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(SkinCare.this, "View stuff in essences", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(SkinCare.this, View_Products.class);
+                intent.putExtra(SKIN_CARE_PRODUCT_TYPE_TEXT, "Essence");
+                startActivity(intent);
             }
         });
         btnViewSerums.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(SkinCare.this, "View stuff in serums", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(SkinCare.this, View_Products.class);
+                intent.putExtra(SKIN_CARE_PRODUCT_TYPE_TEXT, "Serum");
+                startActivity(intent);
             }
         });
         btnViewOils.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(SkinCare.this, "View stuff in oils", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(SkinCare.this, View_Products.class);
+                intent.putExtra(SKIN_CARE_PRODUCT_TYPE_TEXT, "Oil");
+                startActivity(intent);
             }
         });
         btnViewEyes_care.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(SkinCare.this, "View stuff in eye care", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(SkinCare.this, View_Products.class);
+                intent.putExtra(SKIN_CARE_PRODUCT_TYPE_TEXT, "Eye Care");
+                startActivity(intent);
             }
         });
         btnViewMoisturizer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(SkinCare.this, "View stuff in moisturizer", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(SkinCare.this, View_Products.class);
+                intent.putExtra(SKIN_CARE_PRODUCT_TYPE_TEXT, "Moisturizer");
+                startActivity(intent);
             }
         });
         btnViewFaceWipes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(SkinCare.this, "View stuff in face wipes", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(SkinCare.this, View_Products.class);
+                intent.putExtra(SKIN_CARE_PRODUCT_TYPE_TEXT, "Wipes");
+                startActivity(intent);
             }
         });
         btnViewLipScrubs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(SkinCare.this, "View stuff in lip scrubs", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(SkinCare.this, View_Products.class);
+                intent.putExtra(SKIN_CARE_PRODUCT_TYPE_TEXT, "Lip Scrub");
+                startActivity(intent);
             }
         });
         btnViewNailCare.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(SkinCare.this, "View stuff in nail care", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(SkinCare.this, View_Products.class);
+                intent.putExtra(SKIN_CARE_PRODUCT_TYPE_TEXT, "Nail Care");
+                startActivity(intent);
             }
         });
         btnViewAccessories.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(SkinCare.this, "View stuff in accessories", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(SkinCare.this, View_Products.class);
+                intent.putExtra(SKIN_CARE_PRODUCT_TYPE_TEXT, "Skin Care Accessories");
+                startActivity(intent);
             }
         });
 

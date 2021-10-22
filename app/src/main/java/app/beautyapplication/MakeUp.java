@@ -176,7 +176,7 @@ public class MakeUp extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MakeUp.this, Add_Product.class);
-                intent.putExtra(MAKE_UP_PRODUCT_TYPE_TEXT, "Accessories");
+                intent.putExtra(MAKE_UP_PRODUCT_TYPE_TEXT, "Make Up Accessories");
                 startActivity(intent);
             }
         });
@@ -293,109 +293,145 @@ public class MakeUp extends AppCompatActivity {
         btnViewPrimer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MakeUp.this, "Viewing stuff in primer", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MakeUp.this, View_Products.class);
+                intent.putExtra(MAKE_UP_PRODUCT_TYPE_TEXT, "Primer");
+                startActivity(intent);
             }
         });
         btnViewFoundation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MakeUp.this, "Viewing stuff in foundation", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MakeUp.this, View_Products.class);
+                intent.putExtra(MAKE_UP_PRODUCT_TYPE_TEXT, "Foundation");
+                startActivity(intent);
             }
         });
         btnViewConcealer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MakeUp.this, "Viewing stuff in concealer", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MakeUp.this, View_Products.class);
+                intent.putExtra(MAKE_UP_PRODUCT_TYPE_TEXT, "Concealer");
+                startActivity(intent);
             }
         });
         btnViewBlush.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MakeUp.this, "Viewing stuff in blush", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MakeUp.this, View_Products.class);
+                intent.putExtra(MAKE_UP_PRODUCT_TYPE_TEXT, "Blush");
+                startActivity(intent);
             }
         });
         btnViewContour.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MakeUp.this, "Viewing stuff in contour", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MakeUp.this, View_Products.class);
+                intent.putExtra(MAKE_UP_PRODUCT_TYPE_TEXT, "Contour");
+                startActivity(intent);
             }
         });
         btnViewSettingPowder.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MakeUp.this, "Viewing stuff in setting powder", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MakeUp.this, View_Products.class);
+                intent.putExtra(MAKE_UP_PRODUCT_TYPE_TEXT, "Setting Powder");
+                startActivity(intent);
             }
         });
         btnViewHighlighter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MakeUp.this, "Viewing stuff in highlighter", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MakeUp.this, View_Products.class);
+                intent.putExtra(MAKE_UP_PRODUCT_TYPE_TEXT, "Highlighter");
+                startActivity(intent);
             }
         });
         btnViewBrows.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MakeUp.this, "Viewing stuff in brows", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MakeUp.this, View_Products.class);
+                intent.putExtra(MAKE_UP_PRODUCT_TYPE_TEXT, "Brows");
+                startActivity(intent);
             }
         });
         btnViewEyeshadow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MakeUp.this, "Viewing stuff in eyeshadow", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MakeUp.this, View_Products.class);
+                intent.putExtra(MAKE_UP_PRODUCT_TYPE_TEXT, "Eyeshadow");
+                startActivity(intent);
             }
         });
         btnViewMascara.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MakeUp.this, "Viewing stuff in mascara", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MakeUp.this, View_Products.class);
+                intent.putExtra(MAKE_UP_PRODUCT_TYPE_TEXT, "Mascara");
+                startActivity(intent);
             }
         });
         btnViewEyeliner.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MakeUp.this, "Viewing stuff in eyeliner", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MakeUp.this, View_Products.class);
+                intent.putExtra(MAKE_UP_PRODUCT_TYPE_TEXT, "Eyeliner");
+                startActivity(intent);
             }
         });
         btnViewLipliner.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MakeUp.this, "Viewing stuff in lipliner", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MakeUp.this, View_Products.class);
+                intent.putExtra(MAKE_UP_PRODUCT_TYPE_TEXT, "Lipliner");
+                startActivity(intent);
             }
         });
         btnViewLipstick.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MakeUp.this, "Viewing stuff in lipstick", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MakeUp.this, View_Products.class);
+                intent.putExtra(MAKE_UP_PRODUCT_TYPE_TEXT, "Lipstick");
+                startActivity(intent);
             }
         });
         btnViewLipGloss.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MakeUp.this, "Viewing stuff in lip gloss", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MakeUp.this, View_Products.class);
+                intent.putExtra(MAKE_UP_PRODUCT_TYPE_TEXT, "Lip Gloss");
+                startActivity(intent);
             }
         });
         btnViewLipBalmOil.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MakeUp.this, "Viewing stuff in lip balm/oil", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MakeUp.this, View_Products.class);
+                intent.putExtra(MAKE_UP_PRODUCT_TYPE_TEXT, "Lip Balm/Oil");
+                startActivity(intent);
             }
         });
         btnViewMultiPalette.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MakeUp.this, "Viewing stuff in multi-palette", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MakeUp.this, View_Products.class);
+                intent.putExtra(MAKE_UP_PRODUCT_TYPE_TEXT, "Multi-Palette");
+                startActivity(intent);
             }
         });
         btnViewFinishingSpray.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MakeUp.this, "Viewing stuff in finishing spray", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MakeUp.this, View_Products.class);
+                intent.putExtra(MAKE_UP_PRODUCT_TYPE_TEXT, "Finishing Spray");
+                startActivity(intent);
             }
         });
         btnViewAccessories.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MakeUp.this, "Viewing stuff in accessories", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MakeUp.this, View_Products.class);
+                intent.putExtra(MAKE_UP_PRODUCT_TYPE_TEXT, "Make Up Accessories");
+                startActivity(intent);
             }
         });
     }
