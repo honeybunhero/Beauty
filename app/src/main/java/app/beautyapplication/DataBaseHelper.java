@@ -74,6 +74,35 @@ public class DataBaseHelper extends SQLiteOpenHelper {
 
     public List<ProductModel> GetAllProductsFromType(String product_type) {
         List<ProductModel> products = new ArrayList<>();
+//        String queryString = "SELECT * FROM " + PRODUCT_TABLE + " WHERE " + COLUMN_PRODUCT_TYPE + " LIKE " + '\'' + product_type + '\'' + " ORDER BY " + COLUMN_PRODUCT_NAME + " ASC";
+        String queryString = "SELECT * FROM " + PRODUCT_TABLE + " WHERE " + COLUMN_PRODUCT_TYPE + " LIKE " + '\'' + product_type + '\'';
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery(queryString, null);
+
+        if (cursor.moveToNext()) {
+            do {
+                // TODO cursor.getString(0) returns the index of the product.
+                // TODO cursor.getString(1) returns the product type *Primer, Foundation, etc*.
+                // TODO cursor.getString(2) returns the Name entered for the product.
+                // TODO cursor.getString(3) returns the Brand entered for the product.
+
+                String productType = cursor.getString(1);
+                String productName = cursor.getString(2);
+                String productBrand = cursor.getString(3);
+
+                ProductModel newProduct = new ProductModel(productName, productBrand, productType);
+
+                products.add(newProduct);
+            }
+            while (cursor.moveToNext());
+        }
+        cursor.close();
+        db.close();
+        return products;
+    }
+
+    public List<ProductModel> GetAllProductsFromTypeAlphabetical(String product_type) {
+        List<ProductModel> products = new ArrayList<>();
         String queryString = "SELECT * FROM " + PRODUCT_TABLE + " WHERE " + COLUMN_PRODUCT_TYPE + " LIKE " + '\'' + product_type + '\'' + " ORDER BY " + COLUMN_PRODUCT_NAME + " ASC";
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = db.rawQuery(queryString, null);
@@ -100,6 +129,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         return products;
     }
 
+
     public List<ProductModel> GetProductFromDatabase(String product_Name) {
         List<ProductModel> products = new ArrayList<>();
 //        String queryString = "SELECT " + COLUMN_PRODUCT_NAME + " FROM " + PRODUCT_TABLE + " WHERE " + COLUMN_PRODUCT_NAME + " = " + '\'' + product_Name + '\'';
@@ -125,7 +155,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         return products;
     }
 
-        public boolean EditProduct(String product_Name, String new_product_name) {
+    public boolean EditProduct(String product_type, String product_Name, String new_product_name) {
         SQLiteDatabase db = this.getWritableDatabase();
 
 //        String queryString = "WHERE " + '\'' + product_Name + '\'';
@@ -133,13 +163,16 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         //TODO NEEDS TO ALSO INCLUDE THE BRAND NAME. DO THIS AFTER TESTING TO MAKE SURE THE QUERY WORKS
 
         Cursor cursor = db.rawQuery("SELECT * FROM PRODUCT_TABLE WHERE product_Name = ?", new String[]{product_Name});
+        String[] whereargs = {product_type, product_Name};
         ContentValues cv = new ContentValues();
         cv.put(COLUMN_PRODUCT_NAME, new_product_name);
-            long result = db.update(PRODUCT_TABLE, cv,"product_Name=?",new String[]{product_Name});
+//        int result = db.update(PRODUCT_TABLE, cv, PRODUCT_TABLE + "= ? AND " + COLUMN_PRODUCT_NAME + "= ? ", whereargs);
+        int result = db.update(PRODUCT_TABLE, cv, COLUMN_PRODUCT_TYPE + "= ? AND " + COLUMN_PRODUCT_NAME + "= ? ", whereargs);
+//            long result = db.update(PRODUCT_TABLE, cv,"product_Name=?",new String[]{product_Name});
 //        long update = db.update(PRODUCT_TABLE, cv,"COLUMN_PRODUCT_NAME=?",new String[]{});
-//        cursor.close();
-//        db.close();
-            return result != -1;
+        cursor.close();
+        db.close();
+        return result != -1;
     }
 
 

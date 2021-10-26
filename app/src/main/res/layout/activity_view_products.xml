@@ -8,6 +8,43 @@
     android:background="@color/background"
     tools:context=".View_Products">
 
+    <Button
+        android:id="@+id/btn_organize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/buttons_1"
+        android:text="Organize" />
+
+    <LinearLayout
+        android:id="@+id/ll_organize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btn_alphabetical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/buttons_1"
+            android:text="Alphabetical" />
+
+        <Button
+            android:id="@+id/btn_exp_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/buttons_1"
+            android:text="EXP date" />
+    </LinearLayout>
+
     <ScrollView
         android:id="@+id/sv_products_added"
         android:layout_width="match_parent"
