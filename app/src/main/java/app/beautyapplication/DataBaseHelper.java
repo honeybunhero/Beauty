@@ -44,7 +44,6 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         cv.put(COLUMN_PRODUCT_NAME, productModel.GetName());
         cv.put(COLUMN_PRODUCT_BRAND, productModel.GetBrand());
         cv.put(COLUMN_PRODUCT_TYPE, productModel.GetProductType());
-
         long insert = db.insert(PRODUCT_TABLE, null, cv);
 
 //        if (insert == -1) {
@@ -54,6 +53,12 @@ public class DataBaseHelper extends SQLiteOpenHelper {
 //        }
         return insert != -1;
     }
+
+    public void RemoveProduct(String product_Name){
+        SQLiteDatabase db = getWritableDatabase();
+        db.delete(PRODUCT_TABLE,COLUMN_PRODUCT_NAME + " = " + '\'' + product_Name + '\'', null);
+    }
+
 
     public List<String> GetAllBrands() {
         List brands = new ArrayList<>();

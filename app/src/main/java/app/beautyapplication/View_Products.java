@@ -27,7 +27,7 @@ public class View_Products extends AppCompatActivity {
     LinearLayout ll_products_added, ll_edit_product, ll_organize;
     ScrollView sv_products_added;
     EditText et_product_name, et_product_brand;
-    Button btn_save, btn_cancel, btn_organize, btn_alphabetical, btn_exp_date;
+    Button btn_save, btn_remove, btn_cancel, btn_organize, btn_alphabetical, btn_exp_date;
     DataBaseHelper dbEdit;
 
     @Override
@@ -219,6 +219,7 @@ public class View_Products extends AppCompatActivity {
 
         btn_cancel = findViewById(R.id.btn_cancel);
         btn_save = findViewById(R.id.btn_save);
+        btn_remove = findViewById(R.id.btn_remove);
 
         btn_organize = findViewById(R.id.btn_organize);
         btn_alphabetical = findViewById(R.id.btn_alphabetical);
@@ -269,6 +270,17 @@ public class View_Products extends AppCompatActivity {
                 ReturnToDefaultView();
             }
         });
+
+        btn_remove.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dbEdit.RemoveProduct(current_Product_Name);
+                ll_products_added.removeAllViews();
+                AddProductsButtons();
+                ReturnToDefaultView();
+            }
+        });
+
     }
 
 
