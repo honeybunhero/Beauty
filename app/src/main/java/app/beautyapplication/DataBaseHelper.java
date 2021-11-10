@@ -1,14 +1,10 @@
 package app.beautyapplication;
 
-import static android.content.ContentValues.TAG;
-
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.util.Log;
-import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 
@@ -27,7 +23,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
     public DataBaseHelper(@Nullable Context context) {
         super(context, "products.db", null, 1);
     }
-
+ // TODO INCREASE THE VERSION NUMBER
     // This is called the first time the database is accessed
     @Override
     public void onCreate(SQLiteDatabase db) {
@@ -46,8 +42,8 @@ public class DataBaseHelper extends SQLiteOpenHelper {
     // This allows upgrades
     @Override
     public void onUpgrade(SQLiteDatabase db, int i, int i1) {
-
-    }
+// TODO - IF OLD VERSION IS = 1 THEN USE THE "ALTER" STATEMENT TO ADD TO THE DATABASE
+  }
 
     public boolean AddOne(ProductModel productModel) {
         SQLiteDatabase db = this.getWritableDatabase();
