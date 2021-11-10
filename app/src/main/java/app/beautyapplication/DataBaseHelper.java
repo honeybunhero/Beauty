@@ -1,10 +1,14 @@
 package app.beautyapplication;
 
+import static android.content.ContentValues.TAG;
+
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 
@@ -17,6 +21,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
     public static final String COLUMN_PRODUCT_TYPE = "PRODUCT_TYPE";
     public static final String COLUMN_PRODUCT_NAME = "PRODUCT_NAME";
     public static final String COLUMN_PRODUCT_BRAND = "PRODUCT_BRAND";
+    public static final String COLUMN_PRODUCT_EXP_DATE = "COLUMN_PRODUCT_EXP_DATE";
     public static final String COLUMN_ID = "ID";
 
     public DataBaseHelper(@Nullable Context context) {
@@ -26,7 +31,15 @@ public class DataBaseHelper extends SQLiteOpenHelper {
     // This is called the first time the database is accessed
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String createTableStatement = "CREATE TABLE " + PRODUCT_TABLE + " (" + COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " + COLUMN_PRODUCT_TYPE + " TEXT, " + COLUMN_PRODUCT_NAME + " TEXT, " + COLUMN_PRODUCT_BRAND + " TEXT)";
+//        String createTableStatement = "CREATE TABLE " + PRODUCT_TABLE + " (" + COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " + COLUMN_PRODUCT_TYPE + " TEXT, " + COLUMN_PRODUCT_NAME + " TEXT, " + COLUMN_PRODUCT_BRAND + " TEXT)";
+        String createTableStatement = "CREATE TABLE " +
+                PRODUCT_TABLE + " (" +
+                COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
+                COLUMN_PRODUCT_TYPE + " TEXT, " +
+                COLUMN_PRODUCT_NAME + " TEXT, " +
+                COLUMN_PRODUCT_BRAND + " TEXT, " +
+                COLUMN_PRODUCT_EXP_DATE + " TEXT " +
+                ")";
         db.execSQL(createTableStatement);
     }
 
@@ -40,23 +53,23 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues cv = new ContentValues();
 
-
         cv.put(COLUMN_PRODUCT_NAME, productModel.GetName());
         cv.put(COLUMN_PRODUCT_BRAND, productModel.GetBrand());
         cv.put(COLUMN_PRODUCT_TYPE, productModel.GetProductType());
+        cv.put(COLUMN_PRODUCT_EXP_DATE, productModel.GetExpDate());
+
         long insert = db.insert(PRODUCT_TABLE, null, cv);
 
-//        if (insert == -1) {
-//            return false;
-//        } else {
-//            return true;
-//        }
         return insert != -1;
     }
 
-    public void RemoveProduct(String product_Name){
+
+    public boolean DeleteOne(int index) {
         SQLiteDatabase db = getWritableDatabase();
-        db.delete(PRODUCT_TABLE,COLUMN_PRODUCT_NAME + " = " + '\'' + product_Name + '\'', null);
+        String queryString = "DELETE FROM " + PRODUCT_TABLE + " WHERE " + COLUMN_ID + " = " + '\'' + index + '\'';
+        db.execSQL(queryString);
+        db.close();
+        return true;
     }
 
 
@@ -79,23 +92,24 @@ public class DataBaseHelper extends SQLiteOpenHelper {
 
     public List<ProductModel> GetAllProductsFromType(String product_type) {
         List<ProductModel> products = new ArrayList<>();
-//        String queryString = "SELECT * FROM " + PRODUCT_TABLE + " WHERE " + COLUMN_PRODUCT_TYPE + " LIKE " + '\'' + product_type + '\'' + " ORDER BY " + COLUMN_PRODUCT_NAME + " ASC";
         String queryString = "SELECT * FROM " + PRODUCT_TABLE + " WHERE " + COLUMN_PRODUCT_TYPE + " LIKE " + '\'' + product_type + '\'';
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = db.rawQuery(queryString, null);
 
         if (cursor.moveToNext()) {
             do {
-                // TODO cursor.getString(0) returns the index of the product.
-                // TODO cursor.getString(1) returns the product type *Primer, Foundation, etc*.
-                // TODO cursor.getString(2) returns the Name entered for the product.
-                // TODO cursor.getString(3) returns the Brand entered for the product.
-
+//                // TODO cursor.getString(0) returns the index of the product.
+//                // TODO cursor.getString(1) returns the product type *Primer, Foundation, etc*.
+//                // TODO cursor.getString(2) returns the Name entered for the product.
+//                // TODO cursor.getString(3) returns the Brand entered for the product.
+                int productID = cursor.getInt(0);
                 String productType = cursor.getString(1);
                 String productName = cursor.getString(2);
                 String productBrand = cursor.getString(3);
+                String productExpDate = cursor.getString(4);
 
-                ProductModel newProduct = new ProductModel(productName, productBrand, productType);
+                ProductModel newProduct = new ProductModel(productID, productName, productBrand, productType, productExpDate);
+
 
                 products.add(newProduct);
             }
@@ -105,6 +119,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         db.close();
         return products;
     }
+
 
     public List<ProductModel> GetAllProductsFromTypeAlphabetical(String product_type) {
         List<ProductModel> products = new ArrayList<>();
@@ -119,11 +134,13 @@ public class DataBaseHelper extends SQLiteOpenHelper {
                 // TODO cursor.getString(2) returns the Name entered for the product.
                 // TODO cursor.getString(3) returns the Brand entered for the product.
 
+                int productID = cursor.getInt(0);
                 String productType = cursor.getString(1);
                 String productName = cursor.getString(2);
                 String productBrand = cursor.getString(3);
+                String productExpDate = cursor.getString(4);
 
-                ProductModel newProduct = new ProductModel(productName, productBrand, productType);
+                ProductModel newProduct = new ProductModel(productID, productName, productBrand, productType,productExpDate);
 
                 products.add(newProduct);
             }
@@ -134,22 +151,26 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         return products;
     }
 
-
-    public List<ProductModel> GetProductFromDatabase(String product_Name) {
+    public List<ProductModel> GetAllProductsFromTypeExpDate(String product_type) {
         List<ProductModel> products = new ArrayList<>();
-//        String queryString = "SELECT " + COLUMN_PRODUCT_NAME + " FROM " + PRODUCT_TABLE + " WHERE " + COLUMN_PRODUCT_NAME + " = " + '\'' + product_Name + '\'';
-        String queryString = "SELECT * FROM " + PRODUCT_TABLE + " WHERE " + COLUMN_PRODUCT_NAME + " LIKE " + '\'' + product_Name + '\'';
-//        String queryString = "SELECT " + COLUMN_PRODUCT_NAME + " FROM " + PRODUCT_TABLE + " WHERE " + COLUMN_PRODUCT_NAME + " LIKE " + '\'' + product_Name + '\'';
+        String queryString = "SELECT * FROM " + PRODUCT_TABLE + " WHERE " + COLUMN_PRODUCT_TYPE + " LIKE " + '\'' + product_type + '\'' + " ORDER BY " + COLUMN_PRODUCT_EXP_DATE + " ASC";
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = db.rawQuery(queryString, null);
 
         if (cursor.moveToNext()) {
             do {
+                // TODO cursor.getString(0) returns the index of the product.
+                // TODO cursor.getString(1) returns the product type *Primer, Foundation, etc*.
+                // TODO cursor.getString(2) returns the Name entered for the product.
+                // TODO cursor.getString(3) returns the Brand entered for the product.
+
+                int productID = cursor.getInt(0);
                 String productType = cursor.getString(1);
                 String productName = cursor.getString(2);
                 String productBrand = cursor.getString(3);
+                String productExpDate = cursor.getString(4);
 
-                ProductModel newProduct = new ProductModel(productName, productBrand, productType);
+                ProductModel newProduct = new ProductModel(productID, productName, productBrand, productType,productExpDate);
 
                 products.add(newProduct);
             }
@@ -160,45 +181,22 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         return products;
     }
 
-    public boolean EditProduct(String product_type, String product_Name, String new_product_name) {
+    public void EditProduct(ProductModel productModel) {
         SQLiteDatabase db = this.getWritableDatabase();
 
-//        String queryString = "WHERE " + '\'' + product_Name + '\'';
-
-        //TODO NEEDS TO ALSO INCLUDE THE BRAND NAME. DO THIS AFTER TESTING TO MAKE SURE THE QUERY WORKS
-
-        Cursor cursor = db.rawQuery("SELECT * FROM PRODUCT_TABLE WHERE product_Name = ?", new String[]{product_Name});
-        String[] whereargs = {product_type, product_Name};
         ContentValues cv = new ContentValues();
-        cv.put(COLUMN_PRODUCT_NAME, new_product_name);
-//        int result = db.update(PRODUCT_TABLE, cv, PRODUCT_TABLE + "= ? AND " + COLUMN_PRODUCT_NAME + "= ? ", whereargs);
-        int result = db.update(PRODUCT_TABLE, cv, COLUMN_PRODUCT_TYPE + "= ? AND " + COLUMN_PRODUCT_NAME + "= ? ", whereargs);
-//            long result = db.update(PRODUCT_TABLE, cv,"product_Name=?",new String[]{product_Name});
-//        long update = db.update(PRODUCT_TABLE, cv,"COLUMN_PRODUCT_NAME=?",new String[]{});
-        cursor.close();
+        cv.put(COLUMN_PRODUCT_NAME, productModel.GetName());
+        cv.put(COLUMN_PRODUCT_BRAND, productModel.GetBrand());
+        cv.put(COLUMN_PRODUCT_TYPE, productModel.GetProductType());
+        cv.put(COLUMN_ID, productModel.GetID());
+        cv.put(COLUMN_PRODUCT_EXP_DATE, productModel.GetExpDate());
+
+
+        int update = db.update(PRODUCT_TABLE, cv, "ID = '" + productModel.GetID() + "'", null);
+
         db.close();
-        return result != -1;
-    }
-
-
-    public void DeleteProduct() {
 
     }
 
-
-    // TODO MAY NOT WORK PROPERLY YET
-    public int GetProductIndex(String product_Name) {
-        SQLiteDatabase db = this.getReadableDatabase();
-        String queryString = "SELECT * FROM " + PRODUCT_TABLE + " WHERE " + COLUMN_PRODUCT_NAME + " LIKE " + '\'' + product_Name + '\'';
-        Cursor cursor = db.rawQuery(queryString, null);
-        int index = Integer.parseInt(cursor.getString(0));
-        cursor.close();
-        db.close();
-        return index;
-    }
-
-//    void CreateProducts(Cursor cursor){
-//
-//    }
 }
 

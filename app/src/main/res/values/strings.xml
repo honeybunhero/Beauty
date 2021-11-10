@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">BeautyApplication</string>
+    <string name="app_name">Beauty Organizer</string>
     <string name="primer">Primer</string>
     <string name="foundation">Foundation</string>
     <string name="concealer">Concealer</string>
@@ -39,4 +39,7 @@
     <string name="skin_care">Skin Care</string>
     <string name="product_name">Product Name</string>
     <string name="brand_name">Brand Name</string>
+    <string name="organize">Organize</string>
+    <string name="alphabetical">Alphabetical</string>
+    <string name="exp_date">EXP date</string>
 </resources>
