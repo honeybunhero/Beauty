@@ -42,6 +42,7 @@ public class Add_Product extends AppCompatActivity {
             // pass the StringExtra to the variables
             String product_makeUp = intent.getStringExtra(MakeUp.MAKE_UP_PRODUCT_TYPE_TEXT);
             String product_skinCare = intent.getStringExtra(SkinCare.SKIN_CARE_PRODUCT_TYPE_TEXT);
+            String product_bodyCare = intent.getStringExtra(BodyCare.BODY_CARE_PRODUCT_TYPE_TEXT);
 
             if (product_skinCare != null) {
                 productType = product_skinCare;
@@ -49,6 +50,10 @@ public class Add_Product extends AppCompatActivity {
 
             if (product_makeUp != null) {
                 productType = product_makeUp;
+            }
+
+            if (product_bodyCare != null) {
+                productType = product_bodyCare;
             }
         } catch (Exception e) {
             Toast.makeText(this, "Something went wrong", Toast.LENGTH_SHORT).show();

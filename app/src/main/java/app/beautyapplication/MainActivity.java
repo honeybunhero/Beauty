@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btn_MakeUp, btn_SkinCare;
+    Button btn_MakeUp, btn_SkinCare, btn_BodyCare;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         btn_MakeUp = findViewById(R.id.btn_MakeUp);
         btn_SkinCare = findViewById(R.id.btn_SkinCare);
+        btn_BodyCare = findViewById(R.id.btn_BodyCare);
     }
 
     public void OnSkinCareClick(View v) {
@@ -27,6 +28,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void OnMakeUpClick(View v) {
         Intent intent = new Intent(this, MakeUp.class);
+        OpenActivity(intent);
+    }
+
+    public void OnBodyCareClick(View v) {
+        Intent intent = new Intent(this, BodyCare.class);
         OpenActivity(intent);
     }
 

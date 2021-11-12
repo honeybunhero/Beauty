@@ -57,4 +57,20 @@
         android:textColor="#F8BBD0"
         android:textSize="20sp"
         android:focusable="true" />
+
+    <Button
+        android:id="@+id/btn_BodyCare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|left|end"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/buttons_1"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="OnBodyCareClick"
+        android:text="@string/body_care"
+        android:textColor="#F8BBD0"
+        android:textSize="20sp" />
 </LinearLayout>

@@ -19,9 +19,6 @@ public class MakeUp extends AppCompatActivity {
     Button btnAddPrimer, btnAddFoundation, btnAddConcealer, btnAddBlush, btnAddContour, btnAddSettingPowder, btnAddHighlighter, btnAddBrows, btnAddEyeshadow,
             btnAddMascara, btnAddEyeliner, btnAddLipliner, btnAddLipstick, btnAddLipGloss, btnAddLipBalmOil, btnAddMultiPalette, btnAddFinishingSpray, btnAddAccessories;
 
-//    Button btnRemovePrimer, btnRemoveFoundation, btnRemoveConcealer, btnRemoveBlush, btnRemoveContour, btnRemoveSettingPowder, btnRemoveHighlighter, btnRemoveBrows, btnRemoveEyeshadow,
-//            btnRemoveMascara, btnRemoveEyeliner, btnRemoveLipliner, btnRemoveLipstick, btnRemoveLipGloss, btnRemoveLipBalmOil, btnRemoveMultiPalette, btnRemoveFinishingSpray, btnRemoveAccessories;
-
     Button btnViewPrimer, btnViewFoundation, btnViewConcealer, btnViewBlush, btnViewContour, btnViewSettingPowder, btnViewHighlighter, btnViewBrows, btnViewEyeshadow,
             btnViewMascara, btnViewEyeliner, btnViewLipliner, btnViewLipstick, btnViewLipGloss, btnViewLipBalmOil, btnViewMultiPalette, btnViewFinishingSpray, btnViewAccessories;
 

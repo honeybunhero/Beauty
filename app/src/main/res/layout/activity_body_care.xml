@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".BodyCare">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_body_wash_soap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/buttons_1"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="OnBodyWashClick"
+                android:text="Body Wash / Soap"
+                android:textColor="@color/text"
+                android:textSize="20sp"
+                app:layout_gravity="fill" />
+
+            <LinearLayout
+                android:id="@+id/ll_bodywash"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/btnAddBodyWash"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/buttons_2"
+                    android:clickable="false"
+                    android:focusable="true"
+                    android:text="@string/addBtn"
+                    android:textColor="#F8BBD0" />
+
+                <Button
+                    android:id="@+id/btnViewBodyWash"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/buttons_2"
+                    android:clickable="false"
+                    android:focusable="true"
+                    android:text="@string/viewBtn"
+                    android:textColor="#F8BBD0" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_body_lotion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/buttons_1"
+                android:clickable="true"
+                android:onClick="OnBodyLotionClick"
+                android:text="Body Lotion"
+                android:textColor="@color/text"
+                android:textSize="20sp"
+                android:focusable="true" />
+
+            <LinearLayout
+                android:id="@+id/ll_body_lotion"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/btnAddBodyLotion"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/buttons_2"
+                    android:clickable="false"
+                    android:focusable="true"
+                    android:text="@string/addBtn"
+                    android:textColor="#F8BBD0" />
+
+                <Button
+                    android:id="@+id/btnViewBodyLotion"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/buttons_2"
+                    android:clickable="false"
+                    android:focusable="true"
+                    android:text="@string/viewBtn"
+                    android:textColor="#F8BBD0" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_body_oil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/buttons_1"
+                android:clickable="true"
+                android:onClick="OnBodyOilClick"
+                android:text="Body Oil"
+                android:textColor="@color/text"
+                android:textSize="20sp"
+                android:focusable="true" />
+
+            <LinearLayout
+                android:id="@+id/ll_body_oil"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/btnAddBodyOil"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/buttons_2"
+                    android:clickable="false"
+                    android:focusable="true"
+                    android:text="@string/addBtn"
+                    android:textColor="#F8BBD0" />
+
+                <Button
+                    android:id="@+id/btnViewBodyOil"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/buttons_2"
+                    android:clickable="false"
+                    android:focusable="true"
+                    android:text="@string/viewBtn"
+                    android:textColor="#F8BBD0" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_Body_Scrub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/buttons_1"
+                android:clickable="true"
+                android:onClick="OnBodyScrubClick"
+                android:text="Body Scrub"
+                android:textColor="@color/text"
+                android:textSize="20sp"
+                android:focusable="true" />
+
+            <LinearLayout
+                android:id="@+id/ll_body_scrub"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/btnAddBodyScrub"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/buttons_2"
+                    android:clickable="false"
+                    android:focusable="true"
+                    android:text="@string/addBtn"
+                    android:textColor="#F8BBD0" />
+
+                <Button
+                    android:id="@+id/btnViewBodyScrub"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/buttons_2"
+                    android:clickable="false"
+                    android:focusable="true"
+                    android:text="@string/viewBtn"
+                    android:textColor="#F8BBD0" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_Bath_Bomb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/buttons_1"
+                android:clickable="true"
+                android:onClick="OnBathBombClick"
+                android:text="Bath Bomb"
+                android:textColor="@color/text"
+                android:textSize="20sp"
+                android:focusable="true" />
+
+            <LinearLayout
+                android:id="@+id/ll_bath_bomb"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/btnAddBathBomb"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/buttons_2"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="@string/addBtn"
+                    android:textColor="#F8BBD0" />
+
+                <Button
+                    android:id="@+id/btnViewBathBomb"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/buttons_2"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="@string/viewBtn"
+                    android:textColor="#F8BBD0" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_feminine_care"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/buttons_1"
+                android:clickable="true"
+                android:onClick="OnFeminineCareClick"
+                android:text="Feminine Care"
+                android:textColor="@color/text"
+                android:textSize="20sp"
+                android:focusable="true" />
+
+            <LinearLayout
+                android:id="@+id/ll_feminine_Care"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/btnAddFeminineCare"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/buttons_2"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="@string/addBtn"
+                    android:textColor="#F8BBD0" />
+
+                <Button
+                    android:id="@+id/btnViewFemininCare"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/buttons_2"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="@string/viewBtn"
+                    android:textColor="#F8BBD0" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_Deodorant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/buttons_1"
+                android:clickable="true"
+                android:onClick="OnDeodorantClick"
+                android:text="Deodorant"
+                android:textColor="@color/text"
+                android:textSize="20sp"
+                android:focusable="true" />
+
+            <LinearLayout
+                android:id="@+id/ll_deodorant"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/btnAddDeodorant"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/buttons_2"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="@string/addBtn"
+                    android:textColor="#F8BBD0" />
+
+                <Button
+                    android:id="@+id/btnViewDeodorant"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/buttons_2"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="@string/viewBtn"
+                    android:textColor="#F8BBD0" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_Perfume"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/buttons_1"
+                android:clickable="true"
+                android:onClick="OnPerfumeClick"
+                android:text="Perfume"
+                android:textColor="@color/text"
+                android:textSize="20sp"
+                android:focusable="true" />
+
+            <LinearLayout
+                android:id="@+id/ll_perfume"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/btnAddPerfume"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/buttons_2"
+                    android:clickable="false"
+                    android:focusable="true"
+                    android:text="@string/addBtn"
+                    android:textColor="#F8BBD0" />
+
+                <Button
+                    android:id="@+id/btnViewPerfume"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/buttons_2"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="@string/viewBtn"
+                    android:textColor="#F8BBD0" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_accessories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/buttons_1"
+                android:clickable="true"
+                android:onClick="OnAccessoriesClick"
+                android:text="@string/accessories"
+                android:textColor="@color/text"
+                android:textSize="20sp"
+                android:focusable="true" />
+
+            <LinearLayout
+                android:id="@+id/ll_accessories"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/btnAddAccessories"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/buttons_2"
+                    android:clickable="false"
+                    android:focusable="true"
+                    android:text="@string/addBtn"
+                    android:textColor="#F8BBD0" />
+
+                <Button
+                    android:id="@+id/btnViewAccessories"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/buttons_2"
+                    android:clickable="false"
+                    android:focusable="true"
+                    android:text="@string/viewBtn"
+                    android:textColor="#F8BBD0" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
